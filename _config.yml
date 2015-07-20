@@ -4,7 +4,7 @@ github: [Repository metadata]
 baseurl: "http://alt-house.github.io/alt-house-site"
 
 # Permalinks
-permalink:   pretty
+# permalink:   pretty
 
 # Custom Vars
 source:      _build
