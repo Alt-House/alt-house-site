@@ -1,16 +1,7 @@
-name:        Alt House
-
 highlighter: pygments
 github: [Repository metadata]
 
 baseurl: "http://alt-house.github.io/alt-house-site"
-
-# Permalinks
-permalink:   pretty
-
-# Custom Vars
-destination: _site
-exclude:     [".gitignore", ".editorconfig", "less", "README.md", "config.rb"]
 
 # Sass
 sass:
