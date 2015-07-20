@@ -11,7 +11,7 @@ permalink:   pretty
 # Custom Vars
 source:      _build
 destination: _site
-#exclude:     [".gitignore", ".editorconfig", "less", "README.md", "config.rb"]
+exclude:     [".gitignore", ".editorconfig", "less", "README.md", "config.rb"]
 
 # Sass
 sass:
