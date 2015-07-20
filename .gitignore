@@ -35,6 +35,19 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+.AppleDouble
+.LSOverride
 
 
 /_site/*
+
+
+# Icon must ends with two \r.
+Icon
+
+
+### Code editor/IDE ignores
+*.sublime-project
+*.sublime-workspace
+
+.sass-cache
