@@ -10,8 +10,8 @@ baseurl: "http://alt-house.github.io/alt-house-site"
 
 # Custom Vars
 source:      _build
-destination: _site
-exclude:     [".gitignore", ".editorconfig", "less", "README.md", "config.rb"]
+# destination: _site
+# exclude:     [".gitignore", ".editorconfig", "less", "README.md", "config.rb"]
 
 # Sass
 sass:
