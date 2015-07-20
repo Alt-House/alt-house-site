@@ -4,4 +4,42 @@ title: Home
 path: ../
 ---
 
-Home Page
+<div class="container">
+	<div class="row">
+<form action="//formspree.io/kristen@althouse.co" method="POST" class="form">
+	<input type="hidden" name="_next" value="//site.io/thanks.html" />
+	<input type="hidden" name="_subject" value="New submission!" />
+	<input type="hidden" name="_cc" value="jason@althouse.co" />
+      <ul>
+        <li class="field-ctr text-field field-1">
+          <label for="Name">What's your name?</label>
+          <div class="ginput_container">
+            <input name="Name" id="Name" type="text" value="" required data-parsley-error-message="Required" data-parsley-class-handler=".field-1" tabindex="1">
+          </div>
+        </li>
+        <li class="field-ctr text-field field-2">
+          <label for="email">How about an email address?</label>
+          <div class="ginput_container">
+            <input name="email" id="email" type="text" value="" data-parsley-type="email" required data-parsley-error-message="Required" data-parsley-class-handler=".field-2" class="medium" tabindex="2">
+          </div>
+        </li>
+        <li class="field-ctr text-field field-3">
+          <label for="phone">And those digits?</label>
+          <div class="ginput_container">
+            <input name="phone" id="phone" type="text" value="" required data-parsley-error-message="Required" data-parsley-class-handler=".field-3" class="medium" tabindex="3">
+          </div>
+        </li>
+        <li class="field-ctr text-field-wide field-4">
+          <label for="comments">What's on your mind sweet thang?</label>
+          <div class="ginput_container">
+            <textarea name="comments" id="comments" required data-parsley-error-message="Required" data-parsley-class-handler=".field-4" tabindex="4"></textarea>
+          </div>
+        </li>
+        <li class="field-ctr submit">
+          <button id="submit" class="button">Send Message</button>
+        </li>
+      </ul>
+</form>
+
+	</div>
+</div>
