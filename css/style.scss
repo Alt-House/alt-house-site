@@ -3,51 +3,18 @@
 
 @import 'variables';
 @import 'reset';
-@import 'grid/grid';  // taken from bootstrap
+//@import 'grid/grid';  // taken from bootstrap
 @import 'icons';
 @import 'form';
 @import 'site-frame';
 @import 'buttons';
 
+@import 'pages';
 
-// Temporary
 body {
   position: relative;
 }
-.content {
-  position: absolute;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
-  background-color: #ffffff;
-  z-index: 2;
 
-}
-.temp-page {
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
-  background-color: #ffffff;
-  z-index: 2000;
-  span {
-    display: block;
-    text-align: center;
-    padding-top: 50px;
-    height: 50px;
-    line-height: 50px;
-    width: 200px;
-    margin: auto;
-    position: absolute;
-    top: 0; bottom: 0;
-    left: 0; right: 0;
-    color: #999;
-    text-transform: uppercase;
-  }
-}
-
-
-// end temporary
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -56,6 +23,7 @@ body {
 body {
   background: $body-background;
   color: $font-color;
+  font-size: $base-font-size;
 
 }
 body, button, label {
@@ -74,22 +42,10 @@ p {
   margin-bottom: 1em;
 }
 
-.button {
-  padding: 1em 1.5em;
-  color: #fff;
-  display: inline-block;
-  background: $main-color;
-  font-family: $accent-font;
-  text-transform: uppercase;
-  &:hover {
-    color: #fff;
-    background: lighten($main-color,10);
-  }
-}
 
 // Headers
 h1, h2, h3, h4 {
-  font-family: $accent-font;
+  font-family: $font-family;
 }
 h1 {
   font-size: 32px;
@@ -107,53 +63,6 @@ h4 {
   font-size: 18px;
   margin-bottom: 1em;
   color: $main-color;
-}
-
-
-// KZ Love Footer
-$kz-font-color: #999;
-$kz-font-hover-color: #e13c3b; // red
-$kz-bg-color: #e5e5e5;
-
-.site-design {
-  background: $kz-bg-color;
-  color: $kz-font-color;
-  padding: 10px;
-  a {
-    display: block;
-    color: $kz-font-color;
-    &:hover {
-      color: $kz-font-hover-color;
-      .kz-icon-arizona {
-        color: $kz-font-hover-color;
-      }
-    }
-  }
-  .made-in-az {
-    position: relative;
-    font-size: 14px;
-    padding-left: 35px;
-  }
-  span {
-    display: block;
-    line-height: 25px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  i {
-    position: absolute;
-  }
-  .kz-icon-arizona {
-    top: 0;
-    left: 0;
-    font-size: 25px;
-  }
-  .kz-icon-heart-empty {
-    color: $kz-bg-color;
-    font-size: 11px;
-    top: 6px;
-    left: 11px;
-  }
 }
 
 // Responsive

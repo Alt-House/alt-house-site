@@ -1,11 +1,14 @@
+$field-outline-color: darken($gray-light,10);
+
 .form {
   .field-ctr {
     overflow: hidden;
-    margin-bottom: 1em;
+    margin-bottom: 5px;
   }
   input[type="text"] {
     font-family: $font-family;
-    border: 1px solid $main-color;
+    border: 1px solid $field-outline-color;
+    border-radius: 4px;
     line-height: 50px;
     height: 52px;
     padding: 0 15px;
@@ -13,12 +16,14 @@
     font-size: 16px;
     &:focus {
       box-shadow: none;
-      border-color: $main-color-highlight;
+      outline: none;
+      border-color: darken($field-outline-color, 10);
     }
   }
   textarea {
     font-family: $font-family;
-    border: 1px solid $main-color;
+    border: 1px solid $field-outline-color;
+    border-radius: 4px;
     line-height: 1.4em;
     height: 150px;
     padding: 15px;
@@ -26,12 +31,14 @@
     font-size: 16px;
     &:focus {
       box-shadow: none;
-      border-color: $main-color-highlight;
+      outline: none;
+      border-color: darken($field-outline-color, 10);
     }
   }
   label {
-    font-family: $accent-font;
-    display: block;
+    font-family: $font-family;
+    margin-bottom: 5px;
+    display: none;
   }
 
   .field-selected {
@@ -41,25 +48,14 @@
     }
   }
 
-  .text-field {
-    label, input {
-      //float: left;
-    }
-    label {
-      //width: 100px;
-    }
-    input {
-      //border-left: none;
-      //width: calc(100% - 100px);
-    }
-  }
+
   .button {
-    //border: 1px solid $main-color;
-    line-height: 50px;
-    padding: 0 15px;
-    display: block;
-    width: 100%;
-    font-size: 1em;
+    //border: none;
+    //line-height: 50px;
+    //padding: 0 15px;
+    //display: block;
+    //width: 100%;
+    //font-size: 1em;
   }
   // validation
   .parsley-error {
