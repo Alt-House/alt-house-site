@@ -1,18 +1,32 @@
 .button {
   padding: 1em 1.5em;
-  color: #fff;
+  color: $primary-button;
   display: inline-block;
-  background: $primary-button;
+  background: transparent;
   font-family: $accent-font;
   text-transform: uppercase;
-
-  display: block;
-  text-align: center;
+  border-radius: 4px;
+  border: 3px solid $primary-button;
+  font-size: $base-font-size;
 
   @include transition(all .3s);
   &:hover {
-    color: #fff;
-    background: darken($primary-button,10);
+    color: $primary-button;
+    border-color: darken($primary-button,10);
+    background: rgba($primary-button,.3);
     cursor: pointer;
+  }
+  &.block {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  &.inverse {
+    color: $white;
+    border-color: $white;
+    &:hover {
+      color: $white;
+      background: rgba($white,.3);
+    }
   }
 }

@@ -1,7 +1,6 @@
 .hp-video-bg {
     position: relative;
     width: 100%;
-    height: 80vh;
     background: $black;
     .video-bg {
         position: absolute;
@@ -9,50 +8,152 @@
         right: 0; left: 0;
         opacity: .5;
     }
-    .copy {
-        color: $white;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        padding: $desktop-side-space;
-        max-width: 500px;
-        img {
-            width: 300px;
-            margin-bottom: 25px;
-        }
-    }
     h2 {
-        font-size: 30px;
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 8px;
         text-transform: uppercase;
-        margin-bottom: 25px;
+        font-weight: bold;
+        margin-bottom: 1.5em;
     }
     p {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 28px;
         max-width: 400px;
+    }
+    img {
+        width: 250px;
+    }
+    .copy {
+        color: $white;
+        padding: $mobile-side-space*2 $mobile-side-space;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
+    .button {
+        margin-top: 20px;
     }
 }
 .contact {
-    padding: $desktop-side-space;
-    max-width: 500px;
+    padding: $mobile-side-space*2 $mobile-side-space;
+    overflow: hidden;
     h2 {
         font-size: 30px;
-        color: $gray;
         text-transform: uppercase;
     }
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
-
+.services-list {
+    ul {
+        overflow: hidden;
+        border-bottom: 1px solid #000; 
+    }
+    li {
+        float: left;
+        width: 50vw;
+        height: 130px;
+        line-height: 130px;
+    }
+    span {
+        display: inline-block;
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 20px;
+        vertical-align: middle;
+    }
+    i {
+        display: block;
+        font-size: 30px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+}
+.hidden-xs {
+    display: none;
+}
 // Responsive
 @media all and (min-width: 420px) {
 // Tablet & Up
+.hidden-xs {
+    display: block;
+}
 
+.services-list {
+    li {
+        width: 33.33vw;
+    }
+
+}
 // End Tablet & Up
 }
 
 @media all and (min-width: 800px) {
 // Desktop & Up
+.hp-video-bg {
+    height: 80vh;
+    h2 {
+        line-height: 60px;
+        margin-bottom: 0;
+    }
+    .copy {
+        padding: $desktop-side-space;
+        position: absolute;
+        top: 0; 
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 350px;
+
+    }
+    .headline {
+        margin-right: 5%;
+        width: 40%;
+        float: left;
+        text-align: right;
+    }
+    .more-copy {
+        float: left;
+        width: 55%;
+    }
+    .button {
+        margin-top: 0;
+    }
+}
+.contact {
+    padding: $desktop-side-space*2 $desktop-side-space;
+    h2 {
+        font-size: 40px;
+        span {
+            display: block;
+        }
+    }
+    .copy {
+        margin-right: 5%;
+        width: 40%;
+        float: left;
+        text-align: right;
+    }
+    .form-ctr {
+        float: left;
+        width: 55%;
+        max-width: 400px;
+    }
+}
+.services-list {
+    li {
+        width: 16.666vw;
+    }
+
+}
+
+
 
 // End Desktop & Up
 }

@@ -1,4 +1,4 @@
-$field-outline-color: $gray-light;
+$field-outline-color: darken($gray-light,10);
 
 .form {
   .field-ctr {
@@ -8,6 +8,7 @@ $field-outline-color: $gray-light;
   input[type="text"] {
     font-family: $font-family;
     border: 1px solid $field-outline-color;
+    border-radius: 4px;
     line-height: 50px;
     height: 52px;
     padding: 0 15px;
@@ -22,6 +23,7 @@ $field-outline-color: $gray-light;
   textarea {
     font-family: $font-family;
     border: 1px solid $field-outline-color;
+    border-radius: 4px;
     line-height: 1.4em;
     height: 150px;
     padding: 15px;
@@ -48,12 +50,12 @@ $field-outline-color: $gray-light;
 
 
   .button {
-    border: none;
-    line-height: 50px;
-    padding: 0 15px;
-    display: block;
-    width: 100%;
-    font-size: 1em;
+    //border: none;
+    //line-height: 50px;
+    //padding: 0 15px;
+    //display: block;
+    //width: 100%;
+    //font-size: 1em;
   }
   // validation
   .parsley-error {
