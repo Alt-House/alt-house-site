@@ -1,7 +1,7 @@
 highlighter: pygments
 github: [Repository metadata]
 
-baseurl: "http://alt-house.github.io/alt-house-site"
+baseurl: "http://althouse.co"
 
 # Sass
 sass:
