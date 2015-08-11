@@ -7,36 +7,50 @@ path: ../
 meta-title: Home
 meta-description: Home page.
 ---
-<!--
-<div class="container">
-	<div class="row">
+<div class="hp-video-bg">
+  <div id="video-bg" class="video-bg"
+  data-vide-bg="http://kristenzirkler.com/wp-content/uploads/althouse/Working-Space"
+  data-vide-options="posterType: jpg, position: 0% 50%">
+  </div>
+  <div class="copy">
+    <img src="{{ site.baseurl }}img/alt-house-white.png" />
+    <h2>Design.<br> Content.<br> Development.<br> Conversion.</h2>
+    <p>A small team located in Tempe, Arizona that helps businesses grow by combining strategic insight with design, marketing, and technology.</p>
+  </div>
+</div>
+
+<div class="contact">
+
+  <h2>Contact Alt House</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus sapien sed pretium ultrices. Nunc in risus ac mi tempor faucibus.</p>
+
 <form action="//formspree.io/kristen@althouse.co" method="POST" class="form">
 	<input type="hidden" name="_next" value="{{ site.baseurl }}/thank-you" />
 	<input type="hidden" name="_subject" value="AltHouse Contact Form - New submission!" />
 	<input type="hidden" name="_cc" value="jason@althouse.co" />
       <ul>
         <li class="field-ctr text-field field-1">
-          <label for="Name">What's your name?</label>
+          <label for="Name">Name</label>
           <div class="ginput_container">
-            <input name="Name" id="Name" type="text" value="" required data-parsley-error-message="Required" data-parsley-class-handler=".field-1" tabindex="1">
+            <input name="Name" id="Name" type="text" value="" required data-parsley-error-message="Required" data-parsley-class-handler=".field-1" tabindex="1" placeholder="Name">
           </div>
         </li>
         <li class="field-ctr text-field field-2">
-          <label for="email">How about an email address?</label>
+          <label for="email">Email address</label>
           <div class="ginput_container">
-            <input name="email" id="email" type="text" value="" data-parsley-type="email" required data-parsley-error-message="Required" data-parsley-class-handler=".field-2" class="medium" tabindex="2">
+            <input name="email" id="email" type="text" value="" data-parsley-type="email" required data-parsley-error-message="Required" data-parsley-class-handler=".field-2" class="medium" tabindex="2" placeholder="Email address">
           </div>
         </li>
         <li class="field-ctr text-field field-3">
-          <label for="phone">And those digits?</label>
+          <label for="phone">Phone</label>
           <div class="ginput_container">
-            <input name="phone" id="phone" type="text" value="" required data-parsley-error-message="Required" data-parsley-class-handler=".field-3" class="medium" tabindex="3">
+            <input name="phone" id="phone" type="text" value="" required data-parsley-error-message="Required" data-parsley-class-handler=".field-3" class="medium" tabindex="3" placeholder="Phone">
           </div>
         </li>
         <li class="field-ctr text-field-wide field-4">
-          <label for="comments">What's on your mind?</label>
+          <label for="comments">Question or Comment</label>
           <div class="ginput_container">
-            <textarea name="comments" id="comments" required data-parsley-error-message="Required" data-parsley-class-handler=".field-4" tabindex="4"></textarea>
+            <textarea name="comments" id="comments" required data-parsley-error-message="Required" data-parsley-class-handler=".field-4" tabindex="4" placeholder="Question or Comment"></textarea>
           </div>
         </li>
         <li class="field-ctr submit">
@@ -45,6 +59,4 @@ meta-description: Home page.
       </ul>
 </form>
 
-	</div>
-</div>
--->
+</div><!-- /.contact -->

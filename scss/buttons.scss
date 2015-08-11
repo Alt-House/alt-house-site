@@ -2,7 +2,7 @@
   padding: 1em 1.5em;
   color: #fff;
   display: inline-block;
-  background: $main-color;
+  background: $primary-button;
   font-family: $accent-font;
   text-transform: uppercase;
 
@@ -12,6 +12,7 @@
   @include transition(all .3s);
   &:hover {
     color: #fff;
-    background: darken($main-color,10);
+    background: darken($primary-button,10);
+    cursor: pointer;
   }
 }

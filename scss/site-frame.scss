@@ -1,10 +1,10 @@
 $nav-height: 60px;
 $footer-height: 50px;
 
+/*
 body {
 	margin-top: $nav-height;
 }
-
 .site-navigation {
 	@include transition(all 1s);
 	background: #fff;
@@ -75,7 +75,7 @@ body {
 		font-size: 1.5em;
 	}
 }
-
+*/
 
 
 .hide {
@@ -94,7 +94,7 @@ body {
 
 @media all and (min-width: 800px) {
 // Desktop & Up
-
+/*
 	.site-navigation {
 		.mobile-toggle {
 			display: none;
@@ -115,6 +115,6 @@ body {
 
 		}
 	}
-
+*/
 // End Desktop & Up
 }

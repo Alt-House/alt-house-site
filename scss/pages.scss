@@ -1,0 +1,58 @@
+.hp-video-bg {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: $black;
+    .video-bg {
+        position: absolute;
+        top: 0; bottom: 0;
+        right: 0; left: 0;
+        opacity: .5;
+    }
+    .copy {
+        color: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: $desktop-side-space;
+        max-width: 500px;
+        img {
+            width: 300px;
+            margin-bottom: 25px;
+        }
+    }
+    h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    p {
+        font-size: 14px;
+        max-width: 400px;
+    }
+}
+.contact {
+    padding: $desktop-side-space;
+    max-width: 500px;
+    h2 {
+        font-size: 30px;
+        color: $gray;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+// Responsive
+@media all and (min-width: 420px) {
+// Tablet & Up
+
+// End Tablet & Up
+}
+
+@media all and (min-width: 800px) {
+// Desktop & Up
+
+// End Desktop & Up
+}
