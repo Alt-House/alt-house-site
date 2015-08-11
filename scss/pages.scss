@@ -45,6 +45,9 @@
     p {
         font-size: 16px;
     }
+    .map {
+        display: none;
+    }
 }
 .services-list {
     ul {
@@ -144,6 +147,9 @@
         float: left;
         width: 55%;
         max-width: 400px;
+    }
+    .map {
+        display: inline-block;
     }
 }
 .services-list {
