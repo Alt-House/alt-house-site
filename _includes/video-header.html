@@ -1,9 +1,9 @@
+{% if include.layout == "home" %}
 <div class="hp-video-bg {{ include.layout }}">
   <div id="video-bg" class="video-bg"
   data-vide-bg="http://kristenzirkler.com/wp-content/uploads/althouse/Productive-Morning"
   data-vide-options="posterType: jpg, position: 0% 50%">
   </div>
-  {% if include.layout == "home" %}
   <div class="copy">
     <h2 class="headline">
       <img alt="Alt House" src="{{ site.baseurl }}/img/alt-house-white.png" /><br>
@@ -15,9 +15,9 @@
       <a href="#" rel="view-contact" class="button inverse">Let's Chat</a>
     </div>
   </div>
-  {% else %}
-  <div class="page-head">
-    <img alt="Alt House" src="{{ site.baseurl }}/img/alt-house-white.png" />
-  </div>
-  {% endif %}
 </div>
+{% else %}
+<div class="page-head">
+  <img alt="Alt House" src="{{ site.baseurl }}/img/alt-house-white.png" />
+</div>
+{% endif %}
