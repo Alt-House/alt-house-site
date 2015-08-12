@@ -135,6 +135,7 @@
 .hp-video-bg {
     &.home {
         height: 80vh;
+        min-height: 400px;
     }
     h2 {
         line-height: 60px;
@@ -148,7 +149,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        height: 350px;
+        height: 380px;
 
     }
     .headline {
