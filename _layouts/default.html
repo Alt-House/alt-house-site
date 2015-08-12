@@ -38,12 +38,10 @@
 
 {% include header.html %}
 
-{% if page.title != "Home" %}
-<div class="page-header">
-  <div class="inner">
-    <h1>{{page.title}}</h1>
-  </div>
-</div>
+{% if page.slug == "home" %}
+  {% include video-header.html layout="home" %}
+{% else %}
+  {% include video-header.html %}
 {% endif %}
 
 <div class="content">

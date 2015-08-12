@@ -1,0 +1,23 @@
+<div class="hp-video-bg {{ include.layout }}">
+  <div id="video-bg" class="video-bg"
+  data-vide-bg="http://kristenzirkler.com/wp-content/uploads/althouse/Productive-Morning"
+  data-vide-options="posterType: jpg, position: 0% 50%">
+  </div>
+  {% if include.layout == "home" %}
+  <div class="copy">
+    <h2 class="headline">
+      <img alt="Alt House" src="{{ site.baseurl }}/img/alt-house-white.png" /><br>
+      Design<br>Content<br>Development<br>Conversion
+    </h2>
+    <div class="more-copy">
+      <p>Pull up a chair, let’s talk business. We’re a small team located in Tempe, Arizona that helps companies grow by combining strategic insight with design, marketing, and technology.</p>
+      <p class="hidden-xs">We have the skills and experience to take just about any digital project from concept to reality (on time, and on budget).</p>
+      <a href="#" rel="view-contact" class="button inverse">Let's Chat</a>
+    </div>
+  </div>
+  {% else %}
+  <div class="page-head">
+    <img alt="Alt House" src="{{ site.baseurl }}/img/alt-house-white.png" />
+  </div>
+  {% endif %}
+</div>
