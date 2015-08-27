@@ -11,9 +11,9 @@
 
   @include transition(all .3s);
   &:hover {
-    color: $primary-button;
-    border-color: darken($primary-button,10);
-    background: rgba($primary-button,.3);
+    color: $highlight-color;
+    border-color: $highlight-color;
+    background: rgba($highlight-color,.1);
     cursor: pointer;
   }
   &.block {

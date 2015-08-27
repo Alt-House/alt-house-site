@@ -58,7 +58,7 @@
 .services-list {
     ul {
         overflow: hidden;
-        border-bottom: 1px solid #000; 
+        //border-bottom: 1px solid #000; 
     }
     li {
         float: left;
@@ -114,6 +114,89 @@
         width: 200px;
     }
 }
+
+// Bios
+.team-bios {
+    overflow: hidden;
+    //border-bottom: 1px solid $black;
+    padding: 10em 0;
+    background-color: $gray-lightest;
+    background-color: $white;
+    position: relative;
+    .inner {
+        max-width: $page-size;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+    .bg-image {
+        position: absolute;
+        top: 0; bottom: 0;
+        left: 0; right: 0;
+        background-size: cover;
+        background-position: center center;
+        z-index: 1;
+        opacity: .2;
+    }
+}
+.bio {
+    text-align: center;
+    position: relative;
+    background: $white;
+    box-shadow: 0 0 30px rgba($black,.2);
+    border-radius: 4px;
+    margin: 0 15px;
+    &:first-child {
+       margin-bottom: 100px;
+    }
+    img {
+        position: absolute;
+        top: -50px;
+        left:0; right:0;
+        width: 150px;
+        margin: auto;
+        border-radius: 50%;
+        border: 10px solid $white;
+        box-shadow: 0 2px 5px rgba($black,.3);
+
+    }
+    h2, p, .social  {
+        padding: 0 40px;
+    }
+    h2 {
+        padding-top: 120px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        strong {
+            font-weight: 700;
+        }
+    }
+    p {
+        font-size: 14px;
+        height: 150px;
+        margin-bottom: 40px;
+    }
+    .social {
+        font-size: 1.1em;
+        padding-bottom: 40px;
+        a {
+            display: inline-block;
+            margin: 0 2px;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            border-radius: 50%;
+            background-color: $accent-color;
+            color: $white;
+            &:hover {
+                background-color: $highlight-color;
+            }
+        }
+    }
+}
+
 // Responsive
 @media all and (min-width: 420px) {
 // Tablet & Up
@@ -193,8 +276,23 @@
     li {
         width: 16.666vw;
     }
-
 }
+.bio {
+    width: 45%;
+    float: left;
+    margin: 0;
+    &:first-child {
+       margin-right: 10%;
+       margin-bottom: 0;
+    }
+    img {
+        width: 200px;
+    }
+    h2 {
+        padding-top: 170px;
+    }
+}
+
 
 
 
