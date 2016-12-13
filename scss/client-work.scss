@@ -45,7 +45,12 @@
 		display: none;
 	}
 }
-$slider-margin: 100px;
+$slider-margin: 50px;
+.page-home {
+	.unslider {
+		display: none;
+	}
+}
 .unslider {
 	background: rgba($gray-dark,.8);
 	position: fixed;
