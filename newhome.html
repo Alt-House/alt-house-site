@@ -1,0 +1,66 @@
+---
+layout: default
+title: Home
+slug: home
+path: ../
+
+meta-title: Home
+meta-description: Home page.
+---
+<div class="services-list">
+  <ul>
+    <li><span><i class="fa fa-bullseye"></i>Branding, Digital Strategy & Logos</span></li>
+    <li><span><i class="fa fa-code"></i>UX, Web Design & Development</span></li>
+    <li><span><i class="fa fa-pencil"></i>Copy & Content Marketing</span></li>
+    <li><span><i class="fa fa-line-chart"></i>Conversion Rate Optimization</span></li>
+    <li><span><i class="fa fa-thumbs-o-up"></i>Social Media Management</span></li>
+    <li><span><i class="fa fa-shopping-cart"></i>Ecommerce Design & Development</span></li>
+  </ul>
+</div>
+{% include client-work.html %}
+{% include team-bios.html %}
+
+<div class="contact" id="contact">
+<div class="copy">
+  <h2>We’d love to <span>hear from you!</span></h2>
+  <p>Don’t be shy, we're all friends at Alt House.</p>
+  <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=350x250&maptype=roadmap
+&markers=33.425510,-111.940005" alt="Tempe Phoenix Arizona" />
+</div>
+<div class="form-ctr">
+<form action="//formspree.io/kristen@althouse.co" method="POST" class="form">
+	<input type="hidden" name="_next" value="{{ site.baseurl }}/thank-you" />
+	<input type="hidden" name="_subject" value="AltHouse Contact Form - New submission!" />
+	<input type="hidden" name="_cc" value="jason@althouse.co" />
+      <ul>
+        <li class="field-ctr text-field field-1">
+          <label for="Name">Name</label>
+          <div class="ginput_container">
+            <input name="Name" id="Name" type="text" value="" required data-parsley-error-message="Required" data-parsley-class-handler=".field-1" tabindex="1" placeholder="Name">
+          </div>
+        </li>
+        <li class="field-ctr text-field field-2">
+          <label for="email">Email address</label>
+          <div class="ginput_container">
+            <input name="email" id="email" type="text" value="" data-parsley-type="email" required data-parsley-error-message="Required" data-parsley-class-handler=".field-2" class="medium" tabindex="2" placeholder="Email address">
+          </div>
+        </li>
+        <li class="field-ctr text-field field-3">
+          <label for="phone">Phone</label>
+          <div class="ginput_container">
+            <input name="phone" id="phone" type="text" value="" required data-parsley-error-message="Required" data-parsley-class-handler=".field-3" class="medium" tabindex="3" placeholder="Phone">
+          </div>
+        </li>
+        <li class="field-ctr text-field-wide field-4">
+          <label for="comments">Question or Comment</label>
+          <div class="ginput_container">
+            <textarea name="comments" id="comments" required data-parsley-error-message="Required" data-parsley-class-handler=".field-4" tabindex="4" placeholder="Question or Comment"></textarea>
+          </div>
+        </li>
+        <li class="field-ctr submit">
+          <button id="submit" class="button block">Send Message</button>
+        </li>
+      </ul>
+</form>
+</div>
+</div><!-- /.contact -->

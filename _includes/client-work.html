@@ -1,0 +1,30 @@
+{% if include.layout != "slider-only" %}
+<div class="client-work">
+    <h2>Trusted By</h2>
+{% for client in site.data.client-work %}
+  <div class="item"><a href="#" data-client="{{ client.slug }}"><img class="logo" src="{{ site.baseurl }}/img/client-logo-{{ client.slug }}.png" alt="{{ client.name }}" /><img class="thumb" src="{{ site.baseurl }}/img/clientthumb-{{ client.slug }}.jpg" alt="{{ client.name }}" /></a></div>
+{% endfor %}
+</div>
+
+
+{% endif %}
+<div class="client-work-slider">
+<ul>
+{% for client in site.data.client-work limit:3 %}
+	<li class="slide-{{ client.slug }}">
+		<div class="inner">
+			<div class="tag">
+				<img class="logo" src="{{ site.baseurl }}/img/client-logo-{{ client.slug }}.png" alt="{{ client.name }}" />
+				<span>{{ client.tag }}</span>
+			</div>
+			<img class="image" src="{{ site.baseurl }}/img/clientwork-{{ client.slug }}.jpg" alt="{{ client.name }}" />
+			<p class="desc">{{ client.desc }}</p>
+			<div class="testimonial">
+				<span class="quote">{{ client.quote }}</span>
+				<span class="person">{{ client.person }}</span>
+			</div>
+		</div>
+	</li>
+{% endfor %}
+</ul>
+</div>

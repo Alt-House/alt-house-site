@@ -1,0 +1,184 @@
+.client-work {
+	overflow: hidden;
+	padding: 10px;
+	background: $gray-dark;
+    h2 {
+        text-align: center;
+        color: $white;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding: 20px;
+    }
+	div {
+		float: left;
+		overflow: hidden;
+		width: 25%;
+		padding: 10px;
+	}
+	a {
+		display: block;
+		overflow: hidden;
+		position: relative;
+	}
+	.thumb {
+		width: 100%;
+		opacity: .1;
+	    float: left;
+		@include grayscale(1);
+	}
+	.logo {
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		width: 150px;
+		margin: auto;
+		z-index: 4;
+	}
+	span {
+		display: block;
+		position: absolute;
+		left: 0; right: 0;
+		z-index: 2;
+		text-align: center;
+		display: none;
+	}
+}
+$slider-margin: 100px;
+.unslider {
+	background: rgba($gray-dark,.8);
+	position: fixed;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	margin: auto;
+	z-index: 10;
+	.unslider-arrow {
+		position: fixed;
+		top: 0; bottom: 0;
+		width: $slider-margin/2;
+		height: $slider-margin;
+		margin: auto;
+		text-align: center;
+		overflow: hidden;
+		&:before {
+			line-height: $slider-margin;
+			width: $slider-margin;
+			height: $slider-margin;
+			border-radius: 50%;
+			background: $black;
+			display: block;
+			color: $white;
+		}
+	}
+	.next {
+		right: $slider-margin/2;
+		&:before {
+			content: '\232A';
+		    margin-left: -($slider-margin/2);
+			text-align: right;
+		}
+	}
+	.prev {
+		left: $slider-margin/2;
+		&:before {
+			content: '\2329';
+			text-align: left;
+		}
+	}
+	.unslider-nav {
+		display: none;
+	}
+}
+.client-work-slider {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 300;
+	.inner {
+		background: $white;
+		margin: $slider-margin;
+		overflow: auto;
+		border: 4px solid $black;
+	}
+	span {
+		display: block;
+	}
+	.desc, .testimonial {
+		padding: 20px;
+	}
+	.image {
+		width: 100%;
+		box-shadow: 0 0 20px rgba($black,.2);
+	}
+	.logo {
+		width: 125px;
+		margin-top: -10px;
+		float: right;
+	}
+	.tag {
+		background: $black;
+		color: $white;
+		padding: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		overflow: hidden;
+		span {
+			padding-top: 5px;
+		}
+	}
+	.desc {
+		border-bottom: 1px solid $black;
+	}
+}
+/*
+body {
+	overflow: hidden;
+}
+.client-work-slider {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 300;
+	//z-index: 12;
+	li {
+		overflow: hidden;
+	}
+	.inner {
+		background: $white;
+		margin: 50px;
+		overflow: auto;
+		border: 4px solid $black;
+		position: fixed;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+	}
+	span {
+		display: block;
+	}
+	.desc, .testimonial {
+		padding: 20px;
+	}
+	.image {
+		width: 100%;
+		box-shadow: 0 0 20px rgba($black,.2);
+	}
+	.logo {
+		width: 125px;
+		margin-top: -10px;
+		float: right;
+	}
+	.tag {
+		background: $black;
+		color: $white;
+		padding: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		overflow: hidden;
+		span {
+			padding-top: 5px;
+		}
+	}
+	.desc {
+		border-bottom: 1px solid $black;
+	}
+}
+*/

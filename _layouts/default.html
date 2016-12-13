@@ -29,9 +29,7 @@
 
 </head>
 
-<body class="{{ page.slug }}">
-
-<!--div class="temp-page" style="background-image: url('{{ site.baseurl }}/img/alt-house-long.png');"><span>Coming Soon</span></div-->
+<body class="page-{{ page.slug }}">
 <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -54,6 +52,7 @@
 <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
 <script src="{{ site.baseurl }}/js/vendor/jquery.vide.js"></script>
+<script src="{{ site.baseurl }}/js/vendor/unslider.js"></script>
 <script src="{{ site.baseurl }}/js/main.js"></script>
 
 <!-- Google Analytics -  Random Demo Sites -->
@@ -77,6 +76,13 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script>
+  $(document).ready(function($) {
+    $('.client-work-slider').unslider({
+      infinite: true
+    });
+  });
 </script>
 
 </body>

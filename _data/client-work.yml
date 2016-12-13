@@ -1,0 +1,41 @@
+- name: Channel Master
+  slug: channelmaster
+  tag: "ONGOING ECOMMERCE DESIGN, DEVELOPMENT, TECHNICAL SUPPORT, AND DIGITAL STRATEGY"
+  desc: "Channel Master came to us with a need for a more polished look, development help, and digital strategy with their established Volusion ecommerce store. With thousands of visitors everyday, they needed a presence that highlighted their innovative products and made the shopping experience clear and focused while explaining the depth of their product."
+  quote: "Kristen has been a valuable asset. She is extremely professional to work with, and is super knowledgeable across the entire spectrum of development and technical areas critical to conducting business online. Kristen's work displays her creative abilities, attention to detail and ability to think outside the box. Uniquely, Kristen will analyze the utilization of her technical/web skills from a business perspective and make recommendations that she believes will have a positive impact on the business, regardless if they outside of her contracted scope of work. Kristen has also exceeded my expectations when comes to timely completion and delivery of projects. I highly recommend Kristen to any business small or large that is seeking an experience web professional."
+  person: "Joe Bingochea, Executive Vice President, Channel Master"
+
+- name: Jack Grace USA
+  slug: jackgrace
+  tag: Shopify Custom Built Interfaces for Product Purchasing
+  desc: "Jack Grace reached out looking to augment their existing Shopify Template with custom built interfaces to help sell their unique product offering. We built an interface where user can make multiple selections to custom build a golf shoe. To make it easier for users to purchase multiple colors of saddles, we built an interface using the data in Shopify and filtering by shoe size."
+  quote: "I was lucky enough to find Kristen through the lofty recommendation of a trusted friend who’d worked with her in the past. Words can’t describe what a godsend Kristen has been for our startup company. With very little technical savvy on our end, Kristen was able to decipher our wishes and implement them into an amazing website with all the technical functionality we imagined... and then some! She did this quickly, efficiently and cost effectively. I cannot express what a tremendous asset she’s been and continues to be. If you’re debating as to which developer/ designer you should hire, look no further... Kristen is the one."
+  person: "Bart Walker, Founder & CEO, Jack Grace USA"
+
+- name: AuthorityLabs 
+  slug: authoritylabs
+  tag: "EMAIL DRIP CAMPAIGN, WORDPRESS DESIGN & DEVELOPMENT AND MORE"
+  desc: "With their team focused on product development, AuthorityLabs needed assistance in executing their marketing goals. Working closely with the CEO we developed an email drip campaign (http://keywordcourse.com/) within Constant Contact that included a landing page to sell the campaign, email design, ad banners, exit popup for the AuthorityLabs site and marketing emails to drive sign ups.<br><br>Additional projects include a home for their downloadable tools (https://authoritylabs.com/free-tools/), a complete blog redesign & development (https://authoritylabs.com/blog/), other minor updates to their WordPress theme, and even some conference collateral."
+
+- name: flexxCoach
+  slug: flexxcoach
+  tag: tag
+  desc: ""
+  quote: ""
+  person: ""
+
+- name: D&L Communications
+  slug: dlcom
+  tag: tag
+
+- name: Quail Landing Farm
+  slug: quaillanding
+  tag: tag
+
+- name: HireUp Video Production
+  slug: hireup
+  tag: tag
+
+- name: Steeltec
+  slug: steeltec
+  tag: tag
