@@ -1,0 +1,15 @@
+---
+layout: default
+title: Client
+slug: work
+path: ../
+
+meta-title: Client
+meta-description: Client
+
+client-name: Authority Labs
+client-slug: authoritylabs
+client-tag: "EMAIL DRIP CAMPAIGN, WORDPRESS DESIGN & DEVELOPMENT AND MORE"
+client-desc: "With their team focused on product development, AuthorityLabs needed assistance in executing their marketing goals. Working closely with the CEO we developed an email drip campaign (http://keywordcourse.com/) within Constant Contact that included a landing page to sell the campaign, email design, ad banners, exit popup for the AuthorityLabs site and marketing emails to drive sign ups.<br><br>Additional projects include a home for their downloadable tools (https://authoritylabs.com/free-tools/), a complete blog redesign & development (https://authoritylabs.com/blog/), other minor updates to their WordPress theme, and even some conference collateral."
+
+---

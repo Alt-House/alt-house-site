@@ -3,6 +3,12 @@ github: [Repository metadata]
 
 baseurl: "http://althouse.co"
 
+collections:
+  work:
+    output: true
+    output_ext: .html
+    permalink: /work/:path/
+
 # Sass
 sass:
   sass_dir: scss

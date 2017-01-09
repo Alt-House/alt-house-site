@@ -1,0 +1,18 @@
+---
+layout: default
+title: Client
+slug: work
+path: ../
+
+meta-title: Jack Grace USA
+meta-description: Jack Grace USA
+
+client-name: Jack Grace USA
+client-slug: jackgrace
+client-tag: "Shopify Custom Built Interfaces for Product Purchasing"
+client-desc: "Jack Grace reached out looking to augment their existing Shopify Template with custom built interfaces to help sell their unique product offering. We built an interface where user can make multiple selections to custom build a golf shoe. To make it easier for users to purchase multiple colors of saddles, we built an interface using the data in Shopify and filtering by shoe size."
+
+client-quote: "I was lucky enough to find Kristen through the lofty recommendation of a trusted friend who’d worked with her in the past. Words can’t describe what a godsend Kristen has been for our startup company. With very little technical savvy on our end, Kristen was able to decipher our wishes and implement them into an amazing website with all the technical functionality we imagined... and then some! She did this quickly, efficiently and cost effectively. I cannot express what a tremendous asset she’s been and continues to be. If you’re debating as to which developer/ designer you should hire, look no further... Kristen is the one."
+client-person: "Bart Walker, Founder & CEO, Jack Grace USA"
+
+---

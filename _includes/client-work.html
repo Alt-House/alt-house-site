@@ -1,3 +1,23 @@
+{% if include.layout == "page" %}
+
+<div class="slide client-{{ page.client-slug }}">
+  <div class="inner">
+    <div class="tag">
+      <img class="logo" src="{{ site.baseurl }}/img/client-logo-{{ page.client-slug }}.png" alt="{{ client.name }}" />
+      <span>{{ page.client-tag }}</span>
+    </div>
+    <img class="image" src="{{ site.baseurl }}/img/clientwork-{{ page.client-slug }}.jpg" alt="{{ client.client-name }}" />
+    <p class="desc">{{ page.client-desc }}</p>
+    <div class="testimonial">
+      <span class="quote">{{ page.client-quote }}</span>
+      <span class="person">{{ page.client-person }}</span>
+    </div>
+  </div>
+</div>
+
+{% else %}
+
+
 {% if include.layout != "slider-only" %}
 <div class="client-work">
     <h2>Trusted By</h2>
@@ -28,3 +48,4 @@
 {% endfor %}
 </ul>
 </div>
+{% endif %}

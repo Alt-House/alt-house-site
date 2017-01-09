@@ -1,0 +1,18 @@
+---
+layout: default
+title: Client
+slug: work
+path: ../
+
+meta-title: Client
+meta-description: Client
+
+client-name: Channel Master
+client-slug: channelmaster
+client-tag: "ONGOING ECOMMERCE DESIGN, DEVELOPMENT, TECHNICAL SUPPORT, AND DIGITAL STRATEGY"
+client-desc: "Channel Master came to us with a need for a more polished look, development help, and digital strategy with their established Volusion ecommerce store. With thousands of visitors everyday, they needed a presence that highlighted their innovative products and made the shopping experience clear and focused while explaining the depth of their product."
+
+client-quote: "Kristen has been a valuable asset. She is extremely professional to work with, and is super knowledgeable across the entire spectrum of development and technical areas critical to conducting business online. Kristen's work displays her creative abilities, attention to detail and ability to think outside the box. Uniquely, Kristen will analyze the utilization of her technical/web skills from a business perspective and make recommendations that she believes will have a positive impact on the business, regardless if they outside of her contracted scope of work. Kristen has also exceeded my expectations when comes to timely completion and delivery of projects. I highly recommend Kristen to any business small or large that is seeking an experience web professional."
+client-person: "Joe Bingochea, Executive Vice President, Channel Master"
+
+---
