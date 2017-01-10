@@ -1,0 +1,17 @@
+---
+layout: default
+title: Client
+slug: work
+path: ../
+
+meta-title: HireUp Video Productions
+meta-description: HireUp Video Productions
+
+client-order: 7
+
+client-name: HireUp Video Productions
+client-slug: hireup
+client-tag: "Logo Design, Branding & Marketing Site"
+client-desc: ""
+
+---

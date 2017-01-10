@@ -8,7 +8,4 @@ meta-title: Work
 meta-description: Work
 ---
 
-{% assign works = site.work | sort: "client-slug" | reverse %}
-{% for work in works %}
-	{{ work.client-name }}<br>
-{% endfor %}
+{% include client-work.html layout="home" %}

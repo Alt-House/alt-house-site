@@ -1,0 +1,18 @@
+---
+layout: default
+title: Client
+slug: work
+path: ../
+
+meta-title: Quail Landing Farm
+meta-description: Quail Landing Farm
+
+
+client-order: 9
+
+client-name: Quail Landing Farm
+client-slug: quaillanding
+client-tag: "Logo Design & Basic Branding"
+client-desc: ""
+
+---

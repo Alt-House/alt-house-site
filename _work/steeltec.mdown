@@ -1,0 +1,17 @@
+---
+layout: default
+title: Client
+slug: work
+path: ../
+
+meta-title: Steeltec
+meta-description: Steeltec
+
+client-order: 8
+
+client-name: Steeltec
+client-slug: steeltec
+client-tag: "Logo Design & Basic Branding"
+client-desc: "As a startup within a larger company, Steeltec needed an economic branding package to kickstart their new venture without compromising quality and professionalism. We were able to provide a jumping point for their brand to get them through the beginning stages of the company."
+
+---

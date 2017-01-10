@@ -1,0 +1,20 @@
+---
+layout: default
+title: Client
+slug: work
+path: ../
+
+meta-title: flexxCoach
+meta-description: flexxCoach
+
+client-order: 6
+
+client-name: flexxCoach
+client-slug: flexxcoach
+client-tag: "Marketing Site & Software UX/UI"
+client-desc: "flexxCOACH reached out looking for a partner to help them create a modern brand and UI Kit for their established youth hockey coaching software. They were so happy with the work, they came back for more! We created a powerful marketing site to help them increase signups and inform existing users the power of their software."
+
+client-quote: "It’s always a real pleasure working with Kristen Zirkler / Alt House. She’s a mind reader. With very little communication she’s able to produce exactly what we’re looking for, and does so in a way that aligns us for future growth. Looking forward to starting our next project with Kristen!"
+client-person: "Rob DeMartino, Chief Technology Officer, Interactive Coaching LLC"
+
+---

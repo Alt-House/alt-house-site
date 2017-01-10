@@ -1,0 +1,20 @@
+---
+layout: default
+title: Client
+slug: work
+path: ../
+
+meta-title: Blythe Grace
+meta-description: Blythe Grace
+
+client-order: 5
+
+client-name: Blythe Grace
+client-slug: blythegrace
+client-tag: "Branding, Marketing Site and Ongoing Support"
+client-desc: "Blythe Grace offers legal services to help business owners start or grow their businesses. As a fairly new firm, they needed a web presence that allowed them to showcase their unique value proposition – Knowledge and experience in a law firm doesn’t need to be stuffy or expensive. They also needed to elevate their positioning to express their professionalism and experience."
+
+client-quote: "I hired Kristen to develop branding and a dynamic website for my law firm. Kristen was great to work with - professional and timely - and her work product is fantastic. She exceed all of my expectations, and kept the costs in line with our budget. I was so impressed that I have referred Kristen to several of my best clients for rebranding initiatives and website design. I highly recommend Kristen."
+client-person: "Robert S. Reder, Managing Partner, Blythe Grace"
+
+---

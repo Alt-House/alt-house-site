@@ -1,20 +1,43 @@
-{% if include.layout == "page" %}
+{% if include.layout == "home" %}
 
-<div class="slide client-{{ page.client-slug }}">
-  <div class="inner">
-    <div class="tag">
-      <img class="logo" src="{{ site.baseurl }}/img/client-logo-{{ page.client-slug }}.png" alt="{{ client.name }}" />
-      <span>{{ page.client-tag }}</span>
-    </div>
-    <img class="image" src="{{ site.baseurl }}/img/clientwork-{{ page.client-slug }}.jpg" alt="{{ client.client-name }}" />
-    <p class="desc">{{ page.client-desc }}</p>
-    <div class="testimonial">
-      <span class="quote">{{ page.client-quote }}</span>
-      <span class="person">{{ page.client-person }}</span>
-    </div>
-  </div>
+{% assign works = site.work | sort: "client-order" %}
+<div class="client-work">
+    <h2>Trusted By</h2>
+{% for work in works %}
+	<div class="item">
+		<a href="/work/{{ work.client-slug }}" data-client="{{ work.client-slug }}">
+			<img class="logo" src="{{ site.baseurl }}/img/client-logo-{{ work.client-slug }}.png" alt="{{ work.client-name }}" />
+			<img class="thumb" src="{{ site.baseurl }}/img/clientthumb-2-{{ work.client-slug }}.jpg" alt="{{ work.client-name }}" />
+			<span class="copy">{{ work.client-tag }}</span>
+		</a>
+	</div>
+{% endfor %}
 </div>
 
+{% elsif include.layout == "page" %}
+<div class="client-page client-{{ page.client-slug }}">
+	<div class="head">
+	  <img class="althouse" src="{{ site.baseurl }}/img/alt-house-white.png" alt="Alt House" />
+	  <em>&amp;</em>
+	  <img src="{{ site.baseurl }}/img/client-logo-{{ page.client-slug }}.png" alt="{{ client.name }}" />
+	  &nbsp;
+	</div>
+	<h2 class="tag">{{ page.client-tag }}</h2>
+	<div class="slide">
+	  <div class="inner">
+	    <img class="image" src="{{ site.baseurl }}/img/clientwork-{{ page.client-slug }}.jpg" alt="{{ client.client-name }}" />
+	    <p class="desc">{{ page.client-desc }}</p>
+	    {% if page.client-quote %}
+	    <div class="testimonial">
+	      <span class="quote">{{ page.client-quote }}</span>
+	      <span class="person">{{ page.client-person }}</span>
+	    </div>
+	    {% endif %}
+	  </div>
+	</div>
+	<div class="bg" style="background-image: url({{ site.baseurl }}/img/clientthumb-2-{{ page.client-slug }}.jpg);">&nbsp;</div>
+	<div class="page-bg">&nbsp;</div>
+</div>
 {% else %}
 
 
@@ -25,8 +48,6 @@
   <div class="item"><a href="#" data-client="{{ client.slug }}"><img class="logo" src="{{ site.baseurl }}/img/client-logo-{{ client.slug }}.png" alt="{{ client.name }}" /><img class="thumb" src="{{ site.baseurl }}/img/clientthumb-{{ client.slug }}.jpg" alt="{{ client.name }}" /></a></div>
 {% endfor %}
 </div>
-
-
 {% endif %}
 <div class="client-work-slider">
 <ul>

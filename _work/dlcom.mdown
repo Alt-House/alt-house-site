@@ -1,0 +1,17 @@
+---
+layout: default
+title: Client
+slug: work
+path: ../
+
+meta-title: D&L Communications
+meta-description: D&L Communications
+
+client-order: 3
+
+client-name: D&L Communications
+client-slug: dlcom
+client-tag: "Copy Creation & Marketing Site"
+client-desc: ""
+
+---
