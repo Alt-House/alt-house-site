@@ -9,7 +9,7 @@
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 5px;
-        padding: 20px;
+        padding: 10px;
     }
 	div {
 		float: left;
@@ -123,7 +123,7 @@
 		margin-bottom: 30px;
 	}
 	.inner {
-		max-width: $page-size;
+		max-width: ($page-size - 100);
 		margin: 0 auto;
 		color: $white;
 	}

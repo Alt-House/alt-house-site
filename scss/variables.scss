@@ -26,10 +26,12 @@ $primary-button: $accent-color;
 
 $error: #d92424;
 
-$page-size: 700px;
+$page-size: 800px;
 
 $desktop-side-space: 50px;
 $mobile-side-space: 30px;
+
+$site-border-width: 0;
 
 @mixin transition($transitions) {
     -webkit-transition: $transitions;

@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     background: $black;
+    border-bottom: $site-border-width solid $black;
     .video-bg {
         position: absolute;
         top: 0; bottom: 0;
@@ -117,9 +118,10 @@
 
 // Bios
 .team-bios {
-    background-color: $gray-lightest;
     background-color: $white;
     position: relative;
+    border-top: $site-border-width solid $black;
+    border-bottom: $site-border-width solid $black;
     .inner {
         overflow: hidden;
         padding: 8em 0 5em;
@@ -178,7 +180,7 @@
     background: $white;
     box-shadow: 0 0 30px rgba($black,.2);
     border-radius: 4px;
-    margin: 0 15px;
+    margin: 0 10px;
     &:first-child {
        margin-bottom: 100px;
     }
@@ -214,7 +216,7 @@
         padding-bottom: 40px;
         a {
             display: inline-block;
-            margin: 0 2px;
+            margin: 0 1px;
             width: 35px;
             height: 35px;
             text-align: center;
@@ -323,11 +325,11 @@
     }
 }
 .bio {
-    width: 45%;
+    width: 48%;
     float: left;
     margin: 0;
     &:first-child {
-       margin-right: 10%;
+       margin-right: 4%;
        margin-bottom: 0;
     }
     img {
