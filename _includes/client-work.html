@@ -14,6 +14,20 @@
 {% endfor %}
 </div>
 
+{% elsif include.layout == "page-footer" %}
+{% assign works = site.work | sort: "client-order" %}
+<div class="client-work page-footer">
+	<h2>Our Clients</h2>
+{% for work in works %}
+	<div class="item">
+		<a href="/work/{{ work.client-slug }}" data-client="{{ work.client-slug }}">
+			<img class="logo" src="{{ site.baseurl }}/img/client-logo-{{ work.client-slug }}.png" alt="{{ work.client-name }}" />
+			<img class="thumb" src="{{ site.baseurl }}/img/clientthumb-2-{{ work.client-slug }}.jpg" alt="{{ work.client-name }}" />
+			<span class="copy">{{ work.client-tag }}</span>
+		</a>
+	</div>
+{% endfor %}
+</div>
 {% elsif include.layout == "page" %}
 <div class="client-page client-{{ page.client-slug }}">
 	<div class="head">
