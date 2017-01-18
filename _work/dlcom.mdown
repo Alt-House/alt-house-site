@@ -7,7 +7,7 @@ path: ../
 meta-title: D&L Communications
 meta-description: D&L Communications
 
-client-order: 3
+client-order: 7
 
 client-name: D&L Communications
 client-slug: dlcom

@@ -7,7 +7,7 @@ path: ../
 meta-title: flexxCoach
 meta-description: flexxCoach
 
-client-order: 6
+client-order: 5
 
 client-name: flexxCoach
 client-slug: flexxcoach
