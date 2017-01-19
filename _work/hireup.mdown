@@ -7,7 +7,7 @@ path: ../
 meta-title: HireUp Video Productions
 meta-description: HireUp Video Productions
 
-client-order: 6
+client-order: 7
 
 client-name: HireUp Video Productions
 client-slug: hireup

@@ -7,8 +7,7 @@ path: ../
 meta-title: Quail Landing Farm
 meta-description: Quail Landing Farm
 
-
-client-order: 9
+client-order: 1000
 
 client-name: Quail Landing Farm
 client-slug: quaillanding

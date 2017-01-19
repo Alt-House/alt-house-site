@@ -153,6 +153,12 @@
 		display: block;
 		margin-top: 10px;
 	}
+	.desc {
+		a {
+			color: $white;
+			font-weight: bold;
+		}
+	}
 	.bg {
 		position: fixed;
 		top: 0; bottom: 0;

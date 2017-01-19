@@ -1,0 +1,17 @@
+---
+layout: default
+title: 'American Express with Flock of Pixels'
+slug: work
+path: ../
+
+meta-title: American Express with Flock of Pixels
+meta-description: 
+
+client-order: 6
+
+client-name: American Express
+client-slug: americanexpress
+client-tag: 'Script Writing for Promomotional Videos'
+client-desc: "Flock of Pixels, an award winning micro agency, hired Jason to write scripts for a series of 3 promotional web videos for American Express Global Network. The scripts needed to express the value of Amex's B2B services in a creative but succinct way, without using a voice over. The client was very happy with the final results, which can be viewed on the <a href='https://network.americanexpress.com/globalnetwork/'>American Express website</a>."
+
+---
