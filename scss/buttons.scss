@@ -1,32 +1,23 @@
-.button {
-  padding: 1em 1.5em;
-  color: $primary-button;
+.button, .cta-button {
+  padding: 0 1.5em;
+  color: $black;
+  background: $primary-button;
   display: inline-block;
-  background: transparent;
   font-family: $accent-font;
-  text-transform: uppercase;
-  border-radius: 4px;
-  border: 3px solid $primary-button;
+  border: none;
+  //border: 3px solid $primary-button;
   font-size: $base-font-size;
+  line-height: $field-height;
 
   @include transition(all .3s);
   &:hover {
-    color: $highlight-color;
-    border-color: $highlight-color;
-    background: rgba($highlight-color,.1);
+    color: $black;
+    background: lighten($highlight-color,8);
     cursor: pointer;
   }
   &.block {
     display: block;
     text-align: center;
     width: 100%;
-  }
-  &.inverse {
-    color: $white;
-    border-color: $white;
-    &:hover {
-      color: $white;
-      background: rgba($white,.3);
-    }
   }
 }

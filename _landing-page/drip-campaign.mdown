@@ -1,0 +1,75 @@
+---
+layout: landing-page
+title: 'Email Drip Campaigns'
+slug: drip-campaign
+path: ../
+
+meta-title: 'Email campaigns by Alt House'
+meta-description: 'Email campaigns by Alt House drive sales.'
+
+item-order: 1
+---
+
+{% include slides/hero.html headline="Convert More of Your Leads Into Customers" subhead="(without any extra work)" cta-button="Learn More" cta-link="#leadform" image="drip-hero-bg.png" %}
+
+{% include slides/divider.html headline="An email drip campaign (or autoresponder series) may be the single most effective way to nurture leads from your website and close more sales." text="The great part is, once you’ve created the series, your work is done. And since creating successful emails is our job, you really just have to cash the checks." %}
+
+<div class="slide">
+	<div class="inner">
+{% include slides/formatted-list-item.html count="1" headline="Directly engage prospects" text="Instead of hoping potential leads decide to contact you the first time they see your website, you make the first move by offering them something valuable in exchange for their email (and a chance to keep talking)." %}
+{% include slides/formatted-list-item.html count="2" headline="Continue the conversation" text="It’s all too easy to be forgotten in the rush of people’s busy, distracted lives. Drip campaigns capitalize on the interest that got them to your site in the first place, allowing you to stay at the top of your prospect’s mind." %}
+{% include slides/formatted-list-item.html count="3" headline="Build relationships" text="Like a salesperson that never sleeps, your emails work on the mind of your prospect, building the familiarity, interest, and confidence in your offering that gets a 'yes' when you finally ask for the sale." %}
+	</div>
+</div>
+
+{% include slides/divider.html headline="Offer value. Keep in contact. Build a relationship." text="That’s how you convert more customers without being overly 'salesy' or pushy." %}
+
+{% include slides/client-example.html headline="AuthorityLabs saw 828 more engagement with their educational email course created by Alt House. This is a paragraph about what we did and why it worked." quote="This is a testimonial. Chase thinks we are good to work with so you should trust us. He thinks we are work with you trust us. This is a testimonial. Chase thinks we are good to work with so you should trust us. He thinks we are work with you trust us." person="- Chase Granberry, CEO AuthorityLabs" image="drip-al-keywordcourse.png" %}
+
+<hr>
+
+<div class="slide drip-campaign-packages">
+	<div class="inner">
+		<h2>Take your onsite email newsletter sign up and turn it into a lead nurturing sales machine.</h2>
+		<div class="packages">
+			<div class="item sub-item">
+				<h3>Light Drip Campaign</h3>
+				<p>Engage prospects with a simple lead nurturing drip campaign. One hour with our team and we can design a compelling offer, write a 2-3 email series to nurture the lead, and set it all up in your existing email platform with a great looking template.</p>
+				<p class="cost">Cost: $1,500*</p>
+			</div>
+			<div class="item main-item">
+				<h3>Standard Drip Campaign</h3>
+				<p>Spend one hour with our team. We will:</p>
+				<ul>
+					<li>Learn about your audience, your product/service, and your sales process.</li>
+					<li>Determine a fantastic offer for your prospects.</li>
+					<li>Create a compelling lead nurturing email series which delivers the content of your offer while building interest in your product/service (typically 4-8 emails).</li>
+					<li>Craft email signup calls to action & exit popup to capture leads.</li>
+					<li>Setup drip campaign and create custom email templates.</li>
+				</ul>
+				<p class="cost">Starting at $3,000*</p>
+			</div>
+			<div class="item sub-item">
+				<h3>Strategy Creation</h3>
+				<p>Have resources to build your own campaign but not sure where to start? Our strategy sessions deliver high-impact offer ideas paired with a full project plan for your team to execute on. Spend an hour, get a detailed summary of what to do, what to offer, and how to implement.</p>
+				<p class="cost">Cost: $800*</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="disclaimer">* Initial consultation will confirm final cost before any work is done. No surprise charges once the project has started.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

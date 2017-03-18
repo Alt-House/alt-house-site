@@ -1,0 +1,13 @@
+.divider {
+    background: $highlight-color;
+    .inner {
+        max-width: $page-size - 200;
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+    p {
+    	margin: 0;
+    }
+}

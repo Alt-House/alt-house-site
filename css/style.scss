@@ -10,8 +10,15 @@
 @import 'buttons';
 @import 'unslider';
 
+@import 'slides/slide';
+@import 'slides/hero';
+@import 'slides/divider';
+@import 'slides/formatted-list-item';
+@import 'slides/client-example';
+
 @import 'pages';
 @import 'client-work';
+@import 'drip-campaign';
 
 body {
   position: relative;
@@ -26,10 +33,10 @@ body {
   background: $body-background;
   color: $font-color;
   font-size: $base-font-size;
-
 }
 body, button, label {
 	font-family: $font-family;
+  font-weight: 300;
 }
 a {
   color: $link;
@@ -47,14 +54,14 @@ p {
 
 // Headers
 h1, h2, h3, h4 {
-  font-family: $font-family;
+  font-family: $accent-font;
 }
 h1 {
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.2em;
 }
 h2 {
-  font-size: 20px;
+  font-size: 28px;
   line-height: 1.4em;
 }
 h3 {

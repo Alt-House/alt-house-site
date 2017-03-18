@@ -8,22 +8,20 @@ $field-outline-color: darken($gray-light,10);
   input[type="text"] {
     font-family: $font-family;
     border: 1px solid $field-outline-color;
-    border-radius: 4px;
-    line-height: 50px;
-    height: 52px;
+    line-height: $field-height;
+    height: $field-height;
     padding: 0 15px;
     width: 100%;
     font-size: 16px;
     &:focus {
       box-shadow: none;
       outline: none;
-      border-color: darken($field-outline-color, 10);
+      border-color: darken($field-outline-color, 50);
     }
   }
   textarea {
     font-family: $font-family;
     border: 1px solid $field-outline-color;
-    border-radius: 4px;
     line-height: 1.4em;
     height: 150px;
     padding: 15px;
@@ -32,7 +30,7 @@ $field-outline-color: darken($gray-light,10);
     &:focus {
       box-shadow: none;
       outline: none;
-      border-color: darken($field-outline-color, 10);
+      border-color: darken($field-outline-color, 50);
     }
   }
   label {
@@ -48,15 +46,6 @@ $field-outline-color: darken($gray-light,10);
     }
   }
 
-
-  .button {
-    //border: none;
-    //line-height: 50px;
-    //padding: 0 15px;
-    //display: block;
-    //width: 100%;
-    //font-size: 1em;
-  }
   // validation
   .parsley-error {
     input[type="text"], textarea {

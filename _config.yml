@@ -8,6 +8,10 @@ collections:
     output: true
     output_ext: .html
     permalink: /work/:path/
+  landing-page:
+    output: true
+    output_ext: .html
+    permalink: /lp/:path/
 
 # Sass
 sass:

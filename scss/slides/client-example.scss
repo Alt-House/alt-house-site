@@ -1,0 +1,36 @@
+.client-example {
+	.inner {
+		overflow: hidden;
+	}
+	.screen {
+		width: 40%;
+		margin-right: 10%;
+		float: left;
+	}
+	.copy {
+		margin-left: 50%;
+	}
+    img {
+    	width: 100%;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+    p {
+    	margin: 0;
+    	&:before, &:after {
+    		font-family: Times;
+    	}
+    	&:before {
+    		content: '\201C';
+    	}
+    	&:after {
+    		content: '\201D';
+    	}
+    }
+    span {
+    	display: block;
+    	margin-top: 10px;
+    	font-size: 14px;
+    }
+}

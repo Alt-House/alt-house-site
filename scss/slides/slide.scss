@@ -1,0 +1,8 @@
+.slide {
+    overflow: hidden;
+    .inner {
+        max-width: $page-size;
+        margin: 0 auto;
+        padding: 50px 10px;
+    }
+}

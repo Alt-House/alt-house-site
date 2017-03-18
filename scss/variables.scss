@@ -6,32 +6,34 @@ $page-background: $body-background;
 $main-color: #666666;
 $main-color-highlight: #333333; //darker
 $accent-color: #000000;
-$highlight-color: #a3672d; //#669D31;
+$highlight-color: #fece2e; //#669D31;
 
 $black: #000000;
-$gray-lightest: #f6e8e1; //#f1ece9; //#f5f4f2;
+$gray-lightest: #f5f4f2; //#f6e8e1; //#f1ece9; //#f5f4f2;
 $gray-light: #dcd3cd; //#d4d4d2;
 $gray: #95918d; //#8d9095;
 $gray-dark: #4b4542; //#3c3c3c;
 $white: #ffffff;
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,700);
 
 $font-family: 'Open Sans', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$accent-font: $font-family;
+$accent-font: 'Arbutus Slab', Helvetica, Arial, 'Lucida Grande', sans-serif;
 
 $font-color: #000;
 $link: $main-color;
-$primary-button: $accent-color;
+$primary-button: $highlight-color;
+$field-height: 50px;
 
 $error: #d92424;
 
-$page-size: 800px;
+$page-size: 1000px;
 
 $desktop-side-space: 50px;
 $mobile-side-space: 30px;
 
-$site-border-width: 0;
+$site-border-width: 14px;
+$border-color: $gray;
 
 @mixin transition($transitions) {
     -webkit-transition: $transitions;
