@@ -3,6 +3,22 @@
     .inner {
         max-width: $page-size;
         margin: 0 auto;
-        padding: 50px 10px;
+        padding: 30px 10px;
     }
+}
+
+// Responsive ------------------------------------------------------------------
+@media all and (min-width: 420px) {
+// Tablet & Up
+.slide {
+    .inner {
+        padding: 50px 20px;
+    }
+}
+// End Tablet & Up
+}
+
+@media all and (min-width: 800px) {
+// Desktop & Up
+
 }
