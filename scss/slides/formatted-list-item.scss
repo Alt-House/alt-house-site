@@ -1,6 +1,7 @@
 $count-size: 80px;
 
 .formatted-list-item {
+    overflow: hidden;
     .count {
         width: $count-size;
         height: $count-size;
@@ -10,12 +11,37 @@ $count-size: 80px;
         border-radius: 50%;
         font-size: 36px;
         font-family: $accent-font;
-    }
-    h2, p {
-        max-width: 500px;
+        margin: 0 auto 20px;
     }
     h2 {
-        //font-size: 36px;
         margin-bottom: 10px;
     }
+    p {
+        margin-bottom: 40px;
+    }
+    &.last {
+        p {
+            margin-bottom: 0;
+        }
+    }
 }
+// Responsive ------------------------------------------------------------------
+@media all and (min-width: 420px) {
+// Tablet & Up
+.formatted-list-item {
+    .count {
+        float: left;
+        margin: 0;
+    }
+    h2, p {
+        max-width: 550px;
+        margin-left: $count-size + 30;
+    }
+
+}
+} // End Tablet & Up
+
+@media all and (min-width: 800px) {
+// Desktop & Up
+
+} // Desktop & Up
