@@ -7,7 +7,7 @@ path: ../
 meta-title: Quail Landing Farm
 meta-description: Quail Landing Farm
 
-client-order: 1000
+client-order: 10
 
 client-name: Quail Landing Farm
 client-slug: quaillanding
@@ -15,3 +15,5 @@ client-tag: "Logo Design & Basic Branding"
 client-desc: ""
 
 ---
+
+<p>Quail Landing needed a logo to elevate the brand of their farm but didn't have a big budget. We were able to provide a logo that was modern and fresh with a touch of whimsy.</p>

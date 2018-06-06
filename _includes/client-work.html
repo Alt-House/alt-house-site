@@ -3,7 +3,7 @@
 {% assign works = site.work | sort: "client-order" %}
 <div class="client-work">
     <h2>Trusted By</h2>
-{% for work in works limit: 9 %}
+{% for work in works limit: 16 %}
 	<div class="item">
 		<a href="/work/{{ work.client-slug }}" data-client="{{ work.client-slug }}">
 			<img class="logo" src="{{ site.baseurl }}/img/client-logo-{{ work.client-slug }}.png" alt="{{ work.client-name }}" />
@@ -46,6 +46,10 @@
 	      <span class="quote">{{ page.client-quote }}</span>
 	      <span class="person">{{ page.client-person }}</span>
 	    </div>
+	    {% endif %}
+		{{ content }}
+		{% if page.project-url %}
+		<p><a class="cta-button" href="https://www.dlcom.net" target="_blank">Visit Site</a></p>
 	    {% endif %}
 	  </div>
 	</div>

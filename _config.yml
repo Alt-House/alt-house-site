@@ -2,6 +2,7 @@ highlighter: rouge
 github: [Repository metadata]
 
 baseurl: "http://althouse.co"
+livereload: true
 
 collections:
   work:

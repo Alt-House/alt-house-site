@@ -7,7 +7,7 @@ path: ../
 meta-title: Steeltec
 meta-description: Steeltec
 
-client-order: 9
+client-order: 100
 
 client-name: Steeltec
 client-slug: steeltec

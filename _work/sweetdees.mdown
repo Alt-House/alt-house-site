@@ -1,0 +1,20 @@
+---
+layout: default
+title: "sweet Dee's bakeshop"
+slug: work
+path: ../
+
+meta-title: sweet Dee's bakeshop
+meta-description: 
+
+client-order: 4
+
+client-name: sweet Dee's bakeshop
+client-slug: sweetdees
+client-tag: 'Logo, Branding, Website, Menus and more'
+client-desc: ""
+project-url: 'https://sweetdees.com/'
+
+---
+
+<p></p>

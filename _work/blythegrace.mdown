@@ -7,7 +7,7 @@ path: ../
 meta-title: Blythe Grace
 meta-description: Blythe Grace
 
-client-order: 4
+client-order: 9
 
 client-name: Blythe Grace
 client-slug: blythegrace

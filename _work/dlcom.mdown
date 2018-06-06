@@ -7,11 +7,13 @@ path: ../
 meta-title: D&L Communications
 meta-description: D&L Communications
 
-client-order: 8
+client-order: 5
 
 client-name: D&L Communications
 client-slug: dlcom
-client-tag: "Copy Creation & Marketing Site"
+client-tag: "Ongoing Website and Marketing Support"
 client-desc: ""
+project-url: https://www.dlcom.net
 
 ---
+<p>We started with a website redesign and copy creation on the Wordpress platform. From there, we created a product catalog using their Salesforce data and integration with Pardot. Custom data structure & advanced custom fields in workdpress make every page of their site easily editable.</p>

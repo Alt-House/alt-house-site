@@ -1,0 +1,20 @@
+---
+layout: default
+title: 'Killer Shape'
+slug: work
+path: ../
+
+meta-title: Killer Shape
+meta-description: 
+
+client-order: 6
+
+client-name: Killer Shape
+client-slug: killershape
+client-tag: 'Website, Blog & Ecommerce on Squarespace'
+client-desc: ""
+project-url: 'https://killershape.com/'
+
+---
+
+<p>Killer Shape wanted a way to get their new brand up and running quickly, inexpensively but still wanted something professional and well designed. We were able to create a look that complemented their message and implement their site within a few weeks on the Squarespace platform.</p>
