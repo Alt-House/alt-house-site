@@ -7,7 +7,7 @@ path: ../
 meta-title: Client
 meta-description: Client
 
-client-order: 1
+client-order: 2
 
 client-name: Channel Master
 client-slug: channelmaster

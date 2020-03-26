@@ -1,4 +1,6 @@
 ---
+archive: true
+
 layout: default
 title: 'Killer Shape'
 slug: work

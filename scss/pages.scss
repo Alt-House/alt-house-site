@@ -3,6 +3,19 @@
     width: 100%;
     background: $black;
     border-bottom: $site-border-width solid $black;
+    .alt-house-logo {
+        fill: $white;
+    }
+    h1 {
+        margin-bottom: 20px;
+        font-weight: normal;
+        svg {
+            width: 280px;
+        }
+        span {
+            display: none;
+        }
+    }
     .video-bg {
         position: absolute;
         top: 0; bottom: 0;
@@ -10,18 +23,15 @@
         opacity: .6;
     }
     h2 {
-        font-size: 20px;
-        line-height: 40px;
-        letter-spacing: 8px;
-        text-transform: uppercase;
-        font-family: $font-family;
-        font-weight: bold;
-        margin-bottom: 1.5em;
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 0px;
     }
     p {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 28px;
-        max-width: 400px;
+        max-width: 550px;
+        margin-bottom: 30px;
     }
     img {
         width: 250px;
@@ -60,6 +70,7 @@
     ul {
         overflow: hidden;
         //border-bottom: 1px solid #000; 
+        padding: 40px 0;
     }
     li {
         float: left;
@@ -73,15 +84,20 @@
         padding: 0 20px;
         text-align: center;
         //text-transform: uppercase;
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 23px;
         vertical-align: middle;
     }
     i {
+        background-color: $highlight-color;
         display: block;
-        font-size: 30px;
-        height: 30px;
-        margin-bottom: 10px;
+        font-size: 40px;
+        height: 70px;
+        line-height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto 10px;
     }
 }
 .hidden-xs {
@@ -321,7 +337,7 @@
 }
 .services-list {
     li {
-        width: 16.5%;
+        width: 20%;
     }
 }
 .bio {

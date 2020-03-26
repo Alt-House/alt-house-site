@@ -1,13 +1,13 @@
 .client-work {
 	overflow: hidden;
-	background: $gray-dark;
+	//background: $gray-dark;
 	background-color: $black;
 	border-bottom: 30px solid $black;
     h2 {
         text-align: center;
         color: $white;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 5px;
         padding: 10px;
@@ -76,86 +76,99 @@
 }
 .client-page {
 	background-color: $black;
-	.head, .inner, .tag {
+	padding: 20px;
+	.head, .page-title, .inner, .tag {
 		position: relative;
 		z-index: 2;
 	}
 	.head {
-		padding-top: 20px;
+		padding: 20px 0;
 		color: $white;
-		text-align: center;
-		font-size: 30px;
+		//text-align: center;
+		font-size: 50px;
+
 		img {
 			width: 160px;
 		}
 		img, em {
 			display: block;
-			margin: 0 auto;
 		}
 		em {
-			line-height: 40px;
+			line-height: 60px;
+			margin: 0 20px;
 			position: relative;
-			&:after, &:before {
-				content: '';
-				border: 1px solid $white;
-				position: absolute;
-				top: 18px;
-			}
-			&:after {
-				left: 60px;
-				right: 53%;
-			}
-			&:before {
-				right: 60px;
-				left: 53%;
-			}
+			opacity: .5;
 		}
 	}
-	.althouse {
-		padding-top: 20px;
-		padding-bottom: 20px;
+	.logo {
+		span {
+			display: none;
+		}
+		svg {
+			width: 150px;
+			fill: $white;
+		}
+	}
+	h1 {
+		font-size: 14px;
+		font-family: $font-family;
+		color: $white;
 	}
 	.tag {
 		color: $white;
-		text-align: center;
-		font-size: 18px;
-		text-transform: uppercase;
-		font-weight: bold;
+		font-size: 30px;
+		line-height: 34px;
+		max-width: 750px;
 		margin-bottom: 30px;
 	}
+	.head,
+	.page-title,
 	.inner {
 		max-width: ($page-size - 100);
 		margin: 0 auto;
-		color: $white;
+	}
+	.page-title {
+		margin-bottom: 30px;
+	}
+	.inner {
+		padding: 0;
+		background-color: $white;
+	}
+	.content {
+		padding: 20px;
 	}
 	.image {
 		width: 100%;
-		margin-bottom: 30px;
 	}
-	.testimonal {
-		&:before {
-			width: 30px;
-			border-top: 2px solid $white;
-			content: '';
-			display: block;
+	.testimonial {
+		margin-left: 50px;
+		margin: 0 0 20px 0;
+		position: relative;
+		padding: 20px 0 20px 60px;
+		border-top: 3px solid $highlight-color;
+		border-bottom: 3px solid $highlight-color;
+		i {
+			position: absolute;
+			left: 0;
+			top: 20px;
+			font-size: 40px;
+			color: $highlight-color;
 		}
 	}
 	.quote {
-		margin-top: 30px;
 		font-size: 14px;
 		line-height: 18px;
-		&:before, &:after {
-			content: '"';
-		}
 	}
 	.person {
 		font-size: 13px;
 		display: block;
 		margin-top: 10px;
+		font-style: italic;
 	}
 	.desc {
+		font-size: 18px;
+		line-height: 1.4em;
 		a {
-			color: $white;
 			font-weight: bold;
 		}
 	}
@@ -167,6 +180,7 @@
 		background-position: center center;
 		z-index: 1;
 		opacity: .4;
+		filter: blur(8px);
 	}
 	.page-bg {
 		position: fixed;
@@ -174,7 +188,15 @@
 		right: 0; left: 0;
 		background-color: $black;
 		z-index: -1;
-
+	}
+	li {
+		margin-left: 40px;
+		list-style-type: disc;
+		line-height: 1.4em;
+		margin-bottom: 10px;
+	}
+	.cta-button {
+		margin-top: 30px;
 	}
 }
 
@@ -283,5 +305,20 @@ $slider-margin: 50px;
 		line-height: 16px;
 	}
 }
+.client-page {
+	.head {
+		.logo, em, img {
+			float: left;
+		}
+		em {
+			text-align: center;
+		}
+	}
+	.tag {
+		font-size: 44px;
+		line-height: 50px;
+	}
+}
+
 
 }

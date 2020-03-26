@@ -32,22 +32,13 @@ body {
 		left: 0;
 	}
 }
-.footer {
-	background: $black;
-	color: $white;
-	
-	.inner {
-		padding: 10px;
-		overflow: hidden;
-	}
-	.copy {
-		color: $white;
-		font-family: $accent-font;
-		text-transform: uppercase;
-		display: block;
-		text-align: center;
-		font-size: 10px;
-	}
+.copyright {
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px;
+
 }
 .hide {
 	opacity: 0;

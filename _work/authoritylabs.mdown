@@ -7,7 +7,7 @@ path: ../
 meta-title: AuthorityLabs
 meta-description: AuthorityLabs
 
-client-order: 1
+client-order: 3
 
 client-name: AuthorityLabs
 client-slug: authoritylabs

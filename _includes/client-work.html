@@ -1,6 +1,6 @@
 {% if include.layout == "home" %}
 
-{% assign works = site.work | sort: "client-order" %}
+{% assign works = site.work | sort: "client-order" | where_exp: "work", "work.archive != true" %}
 <div class="client-work">
     <h2>Trusted By</h2>
 {% for work in works limit: 16 %}
@@ -15,7 +15,7 @@
 </div>
 
 {% elsif include.layout == "page-footer" %}
-{% assign works = site.work | sort: "client-order" %}
+{% assign works = site.work | sort: "client-order" | where_exp: "work", "work.archive != true" %}
 <div class="client-work page-footer">
 	<h2>Our Clients</h2>
 {% for work in works %}
@@ -30,27 +30,37 @@
 </div>
 {% elsif include.layout == "page" %}
 <div class="client-page client-{{ page.client-slug }}">
-	<div class="head">
-	  <img class="althouse" src="{{ site.baseurl }}/img/alt-house-white.png" alt="Alt House" />
+	<div class="head cf">
+	  <div class="logo">
+	  	<a href="/">
+        {% include svg/alt-house-interactive.svg %}
+        <span>Alt House Interactive</span>
+	    </a>
+      </div>
 	  <em>&amp;</em>
-	  <img src="{{ site.baseurl }}/img/client-logo-{{ page.client-slug }}.png" alt="{{ client.name }}" />
-	  &nbsp;
+	  <img src="{{ site.baseurl }}/img/client-logo-{{ page.client-slug }}.png" alt="{{ page.client-name }}" />
 	</div>
-	<h2 class="tag">{{ page.client-tag }}</h2>
+	<div class="page-title cf">
+		<h2 class="tag">{{ page.client-tag }}</h2>
+		<h1>Client: {{ page.client-name }}</h1>
+	</div>
 	<div class="slide">
 	  <div class="inner">
-	    <img class="image" src="{{ site.baseurl }}/img/clientwork-{{ page.client-slug }}.jpg" alt="{{ client.client-name }}" />
+	    <img class="image" src="{{ site.baseurl }}/img/clientwork-{{ page.client-slug }}.jpg" alt="{{ page.client-name }}" />
+	    <div class="content">
 	    <p class="desc">{{ page.client-desc }}</p>
 	    {% if page.client-quote %}
 	    <div class="testimonial">
-	      <span class="quote">{{ page.client-quote }}</span>
-	      <span class="person">{{ page.client-person }}</span>
+	    	<i class="fad fa-quote-left"></i>
+			<span class="quote">{{ page.client-quote }}</span>
+			<span class="person">{{ page.client-person }}</span>
 	    </div>
 	    {% endif %}
 		{{ content }}
 		{% if page.project-url %}
 		<p><a class="cta-button" href="{{page.project-url}}" target="_blank">Visit Site</a></p>
 	    {% endif %}
+		</div><!-- .content -->
 	  </div>
 	</div>
 	<div class="bg" style="background-image: url({{ site.baseurl }}/img/clientthumb-2-{{ page.client-slug }}.jpg);">&nbsp;</div>

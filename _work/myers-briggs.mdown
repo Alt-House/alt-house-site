@@ -1,0 +1,27 @@
+---
+layout: default
+title: Client
+slug: work
+path: ../
+
+meta-title: "The Myers-Briggs Company"
+meta-description: Myers-Briggs
+
+client-order: 1
+
+client-name: "The Myers-Briggs Company"
+client-slug: myers-briggs
+client-tag: "UX Strategy, UX Design and Visual Design for new eLearning Platform"
+client-desc: "Myers Briggs was looking to extend engagement with their users by creating a new interactive learning platform. The platform provides interactive courses, tests and comparative tools to help users put insights about their personality type to use."
+project-url: https://www.mbtionline.com/
+
+client-quote: "Our team had an ambitious launch date for a new product and needed help pulling together the experience. Quality of experience was key for us so we reached out to Kristen and she hit the ground running. Kristen helped us better focus our objectives and brought new thinking to the table, challenged assumptions and improved the overall quality of our experience. She became an expert on our product quickly and was responsive, resourceful, flexible in her working style to accommodate our own, ultimately resulting in excellent output. We highly recommendation Kristen and have every intention of working with her again in the future."
+client-person: "Woody Selick, Director, Product Innovation"
+---
+<h3>Our involvement included:</h3><br>
+<ul>
+	<li>Guide the design process and define user flows, business logic, interactions and necessary screens for the portal and flexible eLearning modules</li>
+	<li>Design all Wireframes & Interactive Prototypes</li>
+	<li>Full Visual Design & Design Library</li>
+	<li>Development Handoff in Zeplin</li>
+</ul>

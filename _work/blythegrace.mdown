@@ -1,4 +1,6 @@
 ---
+archive: true
+
 layout: default
 title: Client
 slug: work

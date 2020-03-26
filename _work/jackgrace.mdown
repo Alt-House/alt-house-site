@@ -7,7 +7,7 @@ path: ../
 meta-title: Jack Grace USA
 meta-description: Jack Grace USA
 
-client-order: 2
+client-order: 4
 
 client-name: Jack Grace USA
 client-slug: jackgrace

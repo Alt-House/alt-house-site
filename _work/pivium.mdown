@@ -4,16 +4,16 @@ title: Client
 slug: work
 path: ../
 
-meta-title: D&L Communications
-meta-description: D&L Communications
+meta-title: PIVIUM, Inc.
+meta-description: PIVIUM, Inc.
 
 client-order: 5
 
-client-name: D&L Communications
-client-slug: dlcom
+client-name: PIVIUM, Inc.
+client-slug: pivium
 client-tag: "Ongoing Website and Marketing Support"
 client-desc: ""
-project-url: https://www.dlcom.net
+project-url: https://www.pivium.com
 
 ---
 <p>We started with a website redesign and copy creation on the Wordpress platform. From there, we created a product catalog using their Salesforce data and integration with Pardot. Custom data structure & advanced custom fields in workdpress make every page of their site easily editable.</p>
