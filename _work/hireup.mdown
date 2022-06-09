@@ -13,5 +13,4 @@ client-name: HireUp Video Productions
 client-slug: hireup
 client-tag: "Logo Design, Branding & Marketing Site"
 client-desc: ""
-project-url: ""
 ---
