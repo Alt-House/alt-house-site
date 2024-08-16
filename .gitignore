@@ -51,3 +51,4 @@ Icon
 *.sublime-workspace
 
 .sass-cache
+Gemfile.lock
