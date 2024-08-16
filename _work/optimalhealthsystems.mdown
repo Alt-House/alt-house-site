@@ -12,7 +12,7 @@ client-order: 2
 client-name: Optimal Health Systems
 client-slug: optimalhealthsystems
 client-tag: "Ongoing Ecommerce Design, Dev, Technical Support, & Digital Strategy"
-client-desc: "Optimal Health Systems initially came to us with a need for somw development help with an outdated ecommerce system. Over the course of the last 8 years, our relationship has grown into strategically designing and implementing a suite of proprietary systems to support their complex B2B and DTC selling strategies on the Shopify Plus platform."
+client-desc: "Optimal Health Systems initially came to us with a need for a bit of development help with an outdated ecommerce system. Since 2017, our relationship has grown into strategically designing and implementing a full suite of proprietary systems to support their complex B2B and DTC selling strategies on the Shopify Plus platform."
 
 project-url: 'https://www.optimalhealthsystems.com/'
 
