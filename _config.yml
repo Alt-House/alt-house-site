@@ -1,7 +1,7 @@
 highlighter: rouge
 github: [Repository metadata]
 
-baseurl: "http://althouse.co"
+baseurl: "https://www.althouse.co"
 livereload: true
 
 collections:
