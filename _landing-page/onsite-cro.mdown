@@ -12,10 +12,6 @@ item-order: 2
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <!---->link rel="preconnect" href="https://fonts.googleapis.com" / -->
-  <!---->link rel="preconnect" href="https://fonts.gstatic.com" crossorigin / -->
-  <!---->link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" / -->
-
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -53,6 +49,9 @@ item-order: 2
     }
     p {
         margin: 0;
+    }
+    h1, h2 {
+        font-weight: 700;
     }
 
     /* ─── Scrollbar ───
@@ -117,7 +116,7 @@ item-order: 2
       list-style: none;
     }
     .nav-links a {
-      font-size: 0.875rem;
+      font-size: 1rem;
       color: var(--muted-fg);
       transition: color 0.2s;
     }
@@ -126,7 +125,7 @@ item-order: 2
       background: var(--accent);
       color: var(--bg);
       font-family: var(--sans);
-      font-size: 0.875rem;
+      font-size: 1rem;
       font-weight: 500;
       padding: 0.5rem 1.25rem;
       border: none;
@@ -145,7 +144,7 @@ item-order: 2
       border: 1px solid var(--border);
       color: var(--fg);
       font-family: var(--sans);
-      font-size: 0.875rem;
+      font-size: 1rem;
       padding: 0.75rem 1.25rem;
       display: inline-flex;
       align-items: center;
@@ -180,7 +179,7 @@ item-order: 2
     }
     .mobile-nav.open { display: flex; }
     .mobile-nav a {
-      font-size: 0.875rem;
+      font-size: 1rem;
       color: var(--muted-fg);
     }
     .mobile-nav .btn-primary { text-align: center; justify-content: center; }
@@ -241,7 +240,7 @@ item-order: 2
       white-space: nowrap;
     }
     .hero-trust p {
-      font-size: 0.875rem;
+      font-size: 1rem;
       color: var(--muted-fg);
       line-height: 1.6;
     }
@@ -342,7 +341,7 @@ item-order: 2
       transition: color 0.3s;
     }
     .method-card:hover .method-title { color: var(--accent); }
-    .method-desc { color: var(--muted-fg); font-size: 0.875rem; line-height: 1.7; }
+    .method-desc { color: var(--muted-fg); font-size: 1rem; line-height: 1.7; }
 
     /* ─── PHILOSOPHY ─── */
     .philosophy-section {
@@ -415,7 +414,7 @@ item-order: 2
     }
     .way-desc {
       color: var(--muted-fg);
-      font-size: 0.875rem;
+      font-size: 1rem;
       line-height: 1.7;
       margin-bottom: 2.5rem;
       flex: 1;
