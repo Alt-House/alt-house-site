@@ -26,6 +26,10 @@ item-order: 2
       --sans:       'Instrument Sans', sans-serif;
       --display:    'Fraunces', serif;
       --mono:       'DM Mono', monospace;
+
+      --pad-section-sm: 6rem;
+      --pad-section: 9rem;
+      --pad-section-lg: 11rem;
     }
     /* override althouse */
     @media (min-width: 420px) {
@@ -179,9 +183,9 @@ item-order: 2
 
     /* ─── HERO ─── */
     .hero {
-      padding: 9rem 0 6rem;
+      padding: var(--pad-section) 0 var(--pad-section-sm);
     }
-    @media (min-width: 1024px) { .hero { padding: 13rem 0 9rem; } }
+    @media (min-width: 1024px) { .hero { padding: var(--pad-section-lg) 0 var(--pad-section); } }
 
     .hero-grid {
       display: grid;
