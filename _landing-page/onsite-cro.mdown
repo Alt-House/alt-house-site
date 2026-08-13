@@ -9,9 +9,13 @@ meta-description: 'CRO by Alt House drive sales.'
 
 item-order: 2
 ---
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!---->link rel="preconnect" href="https://fonts.googleapis.com" / -->
+  <!---->link rel="preconnect" href="https://fonts.gstatic.com" crossorigin / -->
+  <!---->link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" / -->
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -23,8 +27,8 @@ item-order: 2
       --muted-fg:   #B9AF9C;
       --accent:     #c8a84b;
       --border:     rgba(240,235,226,0.10);
-      --sans:       'Instrument Sans', sans-serif;
-      --display:    'Fraunces', serif;
+      --sans:       'Barlow', sans-serif;
+      --display:    'Barlow', sans-serif;
       --mono:       'DM Mono', monospace;
 
       --pad-section-sm: 6rem;
