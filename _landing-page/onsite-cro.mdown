@@ -29,7 +29,13 @@ item-order: 2
       --display:    'Fraunces', serif;
       --mono:       'DM Mono', monospace;
     }
-
+    /* override althouse */
+    @media (min-width: 420px) {
+        .hero h1, .hero h2 {
+            max-width: 100%;
+        }
+    }
+/*
     html { font-size: 16px; scroll-behavior: smooth; }
 
     body {
@@ -39,7 +45,7 @@ item-order: 2
       -webkit-font-smoothing: antialiased;
       min-height: 100vh;
     }
-
+*/
     /* ─── Scrollbar ─── */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
@@ -460,29 +466,6 @@ item-order: 2
     .mb-4 { margin-bottom: 1rem; }
     .mb-8 { margin-bottom: 2rem; }
   </style>
-
-  <!-- ── NAV ── -->
-  <header id="site-header">
-    <div class="container">
-      <nav-inner style="display:flex;align-items:center;justify-content:space-between;height:4rem;">
-        <a href="#" class="wordmark">Clearfield Studio</a>
-        <ul class="nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#contact" class="btn-primary">Let's Chat <svg class="arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></li>
-        </ul>
-        <button class="hamburger" id="menu-toggle" aria-label="Toggle menu">
-          <svg id="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-          <svg id="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-        </button>
-      </nav-inner>
-    </div>
-    <div class="mobile-nav" id="mobile-nav">
-      <a href="#services" onclick="closeMobileNav()">Services</a>
-      <a href="#process" onclick="closeMobileNav()">Process</a>
-      <a href="#contact" class="btn-primary" onclick="closeMobileNav()">Let's Chat</a>
-    </div>
-  </header>
 
   <!-- ── HERO ── -->
   <section class="hero">
