@@ -9,8 +9,6 @@ meta-description: 'CRO by Alt House drive sales.'
 
 item-order: 2
 ---
-
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -22,7 +20,7 @@ item-order: 2
       --fg:         #f0ebe2;
       --card:       #191714;
       --secondary:  #242118;
-      --muted-fg:   #A39A8A;
+      --muted-fg:   #B9AF9C;
       --accent:     #c8a84b;
       --border:     rgba(240,235,226,0.10);
       --sans:       'Instrument Sans', sans-serif;
@@ -45,11 +43,15 @@ item-order: 2
       -webkit-font-smoothing: antialiased;
       min-height: 100vh;
     }
+    p {
+        margin: 0;
+    }
 
-    /* ─── Scrollbar ─── */
+    /* ─── Scrollbar ───
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    */
 
     /* ─── Helpers ─── */
     .container { max-width: 87rem; margin: 0 auto; padding: 0 1.5rem; }
@@ -234,7 +236,6 @@ item-order: 2
       font-size: 0.875rem;
       color: var(--muted-fg);
       line-height: 1.6;
-      max-width: 30rem;
     }
 
     /* ─── SHARED SECTION TITLE ROW ─── */
