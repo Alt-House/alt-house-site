@@ -47,9 +47,11 @@ item-order: 2
       -webkit-font-smoothing: antialiased;
       min-height: 100vh;
     }
+
     p {
         margin: 0;
     }
+
     h1, h2 {
         font-weight: 700;
     }
