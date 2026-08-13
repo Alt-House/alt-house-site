@@ -27,9 +27,9 @@ item-order: 2
       --display:    'Barlow', sans-serif;
       --mono:       'DM Mono', monospace;
 
-      --pad-section-sm: 6rem;
-      --pad-section: 9rem;
-      --pad-section-lg: 11rem;
+      --pad-section-sm: 4rem;
+      --pad-section: 6rem;
+      --pad-section-lg: 9rem;
     }
     /* override althouse */
     @media (min-width: 420px) {
