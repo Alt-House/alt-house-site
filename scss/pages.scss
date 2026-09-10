@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .hp-video-bg {
     position: relative;
     width: 100%;
@@ -280,8 +282,7 @@
 // Desktop & Up
 .hp-video-bg {
     &.home {
-        height: 80vh;
-        min-height: 400px;
+        min-height: 550px;
     }
     h2 {
         line-height: 60px;

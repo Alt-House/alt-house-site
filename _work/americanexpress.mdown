@@ -4,8 +4,6 @@ archive: true
 layout: default
 title: 'American Express with Flock of Pixels'
 slug: work
-path: ../
-
 meta-title: American Express with Flock of Pixels
 meta-description: 
 

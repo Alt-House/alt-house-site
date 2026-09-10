@@ -2,8 +2,6 @@
 layout: landing-page
 title: 'Conversion Rate Optimization'
 slug: onsite-cro
-path: ../
-
 meta-title: 'CRO by Alt House'
 meta-description: 'CRO by Alt House drive sales.'
 

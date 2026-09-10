@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .divider {
     background: $highlight-color;
     .inner {

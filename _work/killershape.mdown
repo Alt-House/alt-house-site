@@ -4,8 +4,6 @@ archive: true
 layout: default
 title: 'Killer Shape'
 slug: work
-path: ../
-
 meta-title: Killer Shape
 meta-description: 
 

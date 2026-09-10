@@ -1,5 +1,18 @@
 {% if include.layout == "home" %}
 <div class="hp-video-bg {{ include.layout }}">
+    <div class="copy">
+        <h1>
+            {% include svg/alt-house-interactive.svg %}
+            <span>Alt House Interactive</span>
+        </h1>
+        <h2>High Level Strategy, Hands on Execution.</h2>
+        <p>Solve technology, process or marketing problems with a partner that can help define the problem, find creative solutions and get projects completed.</p>
+
+        <a href="#" rel="view-contact" class="cta-button">Let's Chat</a>
+    </div>
+</div>
+{% elsif include.layout == "home-video" %}
+<div class="hp-video-bg {{ include.layout }}">
 
   <div id="video-bg" class="video-bg"
   data-vide-bg="https://kristenzirkler.com/wp-content/uploads/althouse/coverr-1579785102634"

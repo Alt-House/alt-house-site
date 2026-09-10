@@ -2,9 +2,9 @@
 // Grid system
 // --------------------------------------------------
 
-@import 'grid-variables';
-@import 'grid-framework';
-@import 'grid-mixin';
+@use 'grid-variables' as *;
+@use 'grid-framework' as *;
+@use 'grid-mixin' as *;
 
 // Container widths
 //

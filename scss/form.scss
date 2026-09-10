@@ -1,4 +1,7 @@
-$field-outline-color: darken($gray-light,10);
+@use 'variables' as *;
+@use 'sass:color';
+
+$field-outline-color: color.adjust($gray-light, $lightness: -10%);
 
 .form {
   .field-ctr {
@@ -16,7 +19,7 @@ $field-outline-color: darken($gray-light,10);
     &:focus {
       box-shadow: none;
       outline: none;
-      border-color: darken($field-outline-color, 50);
+      border-color: color.adjust($field-outline-color, $lightness: -50%);
     }
   }
   textarea {
@@ -30,7 +33,7 @@ $field-outline-color: darken($gray-light,10);
     &:focus {
       box-shadow: none;
       outline: none;
-      border-color: darken($field-outline-color, 50);
+      border-color: color.adjust($field-outline-color, $lightness: -50%);
     }
   }
   label {

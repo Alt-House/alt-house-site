@@ -1,24 +1,25 @@
 ---
 ---
 
-@import 'variables';
-@import 'reset';
-//@import 'grid/grid';  // taken from bootstrap
-@import 'icons';
-@import 'form';
-@import 'site-frame';
-@import 'buttons';
-@import 'unslider';
+@use 'variables' as *;
+@use 'sass:color';
+@use 'reset';
+//@use 'grid/grid';  // taken from bootstrap
+@use 'icons';
+@use 'form';
+@use 'site-frame';
+@use 'buttons';
+@use 'unslider';
 
-@import 'slides/slide';
-@import 'slides/hero';
-@import 'slides/divider';
-@import 'slides/formatted-list-item';
-@import 'slides/client-example';
+@use 'slides/slide';
+@use 'slides/hero';
+@use 'slides/divider';
+@use 'slides/formatted-list-item';
+@use 'slides/client-example';
 
-@import 'pages';
-@import 'client-work';
-@import 'drip-campaign';
+@use 'pages';
+@use 'client-work';
+@use 'drip-campaign';
 
 body {
   position: relative;
@@ -43,7 +44,7 @@ a {
   text-decoration: none;
   outline: none;
   &:hover {
-  	color: darken($link, 10);
+  	color: color.adjust($link, $lightness: -10%);
   }
 }
 p {

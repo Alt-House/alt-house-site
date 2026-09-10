@@ -2,8 +2,6 @@
 layout: default
 title: AuthorityLabs
 slug: work
-path: ../
-
 meta-title: AuthorityLabs
 meta-description: AuthorityLabs
 

@@ -2,8 +2,6 @@
 layout: landing-page
 title: 'Email Drip Campaigns'
 slug: drip-campaign
-path: ../
-
 meta-title: 'Email campaigns by Alt House'
 meta-description: 'Email campaigns by Alt House drive sales.'
 

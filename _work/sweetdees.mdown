@@ -2,8 +2,6 @@
 layout: default
 title: "sweet Dee's bakeshop"
 slug: work
-path: ../
-
 meta-title: sweet Dee's bakeshop
 meta-description: 
 

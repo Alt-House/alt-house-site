@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'sass:math';
+
 .client-work {
 	overflow: hidden;
 	//background: $gray-dark;
@@ -216,7 +219,7 @@ $slider-margin: 50px;
 	.unslider-arrow {
 		position: fixed;
 		top: 0; bottom: 0;
-		width: $slider-margin/2;
+		width: math.div($slider-margin, 2);
 		height: $slider-margin;
 		margin: auto;
 		text-align: center;
@@ -232,15 +235,15 @@ $slider-margin: 50px;
 		}
 	}
 	.next {
-		right: $slider-margin/2;
+		right: math.div($slider-margin, 2);
 		&:before {
 			content: '\232A';
-		    margin-left: -($slider-margin/2);
+		    margin-left: math.div($slider-margin, -2);
 			text-align: right;
 		}
 	}
 	.prev {
-		left: $slider-margin/2;
+		left: math.div($slider-margin, 2);
 		&:before {
 			content: '\2329';
 			text-align: left;

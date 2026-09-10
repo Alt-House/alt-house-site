@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'sass:color';
+
 .drip-campaign {
 
 }
@@ -99,7 +102,7 @@
 .drip-campaign-packages {
 	.item {
 		width: 25%;
-		border: 1px solid lighten($border-color,30);
+		border: 1px solid color.adjust($border-color, $lightness: 30%);
 		&:nth-child(1), &:nth-child(3) {
 			display: block;
 		}

@@ -8,17 +8,17 @@ $main-color-highlight: #333333; //darker
 $accent-color: #000000;
 $highlight-color: #fece2e; //#669D31;
 
-$black: #000000;
+$black: #2E2E2E; //#000000;
 $gray-lightest: #f5f4f2; //#f6e8e1; //#f1ece9; //#f5f4f2;
 $gray-light: #dcd3cd; //#d4d4d2;
 $gray: #95918d; //#8d9095;
 $gray-dark: #4b4542; //#3c3c3c;
 $white: #ffffff;
 
-@import url(https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans:300,700);
+@import url(https://use.typekit.net/cwe2byb.css);
 
-$font-family: 'Open Sans', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$accent-font: 'Archivo Black', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$font-family: 'europa', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$accent-font: 'europa', Helvetica, Arial, 'Lucida Grande', sans-serif;
 
 $font-color: #000;
 $link: $main-color;
