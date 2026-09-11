@@ -1,8 +1,11 @@
-<div class="hero {{ include.slide-class }}">
+<div class="hero {% if include.image %}hero--has-image{% endif %} {{ include.slide-class }}">
   <div class="inner">
-    <h1>{{ include.headline }}</h1>
-    <h2>{{ include.subhead }}</h2>
-    <a href="{{ include.cta-link }}" class="cta-button">{{ include.cta-button }}</a>
+    <h1 class="head mb">{{ include.headline }}</h1>
+    <h3 class="subhead muted mb-lg">{{ include.subhead }}</h3>
+
+    <a href="{{ include.cta-link }}" class="button">{{ include.button }}</a>
   </div>
-  <div class="bg" style="background-image: url('{{ site.baseurl }}/img/{{ include.image }}');">&nbsp;</div>
+  {% if include.image %}
+    <div class="bg" style="background-image: url('{{ site.baseurl }}/img/{{ include.image }}');">&nbsp;</div>
+  {% endif %}
 </div>

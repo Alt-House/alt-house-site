@@ -2,6 +2,22 @@
 
 {% assign works = site.work | sort: "client-order" | where_exp: "work", "work.archive != true" %}
 <div class="client-work">
+{% for work in works limit: 3 %}
+	<div class="item">
+		<a href="/work/{{ work.client-slug }}" data-client="{{ work.client-slug }}">
+			<img class="thumb" src="{{ site.baseurl }}/img/clientthumb-2-{{ work.client-slug }}.jpg" alt="{{ work.client-name }}" />
+			<span class="content">
+				<img class="logo mb" src="{{ site.baseurl }}/img/client-logo-{{ work.client-slug }}.png" alt="{{ work.client-name }}" />
+				<span class="headline">{{ work.client-tag }}</span>
+			</span>
+		</a>
+	</div>
+{% endfor %}
+</div>
+
+{% elsif include.layout == "home-old" %}
+{% assign works = site.work | sort: "client-order" | where_exp: "work", "work.archive != true" %}
+<div class="client-work-old">
     <h2>Trusted By</h2>
 {% for work in works limit: 16 %}
 	<div class="item">
@@ -16,33 +32,28 @@
 
 {% elsif include.layout == "page-footer" %}
 {% assign works = site.work | sort: "client-order" | where_exp: "work", "work.archive != true" %}
-<div class="client-work page-footer">
+<div class="client-work-list page-footer">
 	<h2>Our Clients</h2>
-{% for work in works %}
-	<div class="item">
-		<a href="/work/{{ work.client-slug }}" data-client="{{ work.client-slug }}">
-			<img class="logo" src="{{ site.baseurl }}/img/client-logo-{{ work.client-slug }}.png" alt="{{ work.client-name }}" />
-			<img class="thumb" src="{{ site.baseurl }}/img/clientthumb-2-{{ work.client-slug }}.jpg" alt="{{ work.client-name }}" />
-			<span class="copy">{{ work.client-tag }}</span>
-		</a>
+	<div class="items">
+		{% for work in works limit: 9 %}
+			<div class="item">
+				<a href="/work/{{ work.client-slug }}" data-client="{{ work.client-slug }}">
+					<img class="logo" src="{{ site.baseurl }}/img/client-logo-{{ work.client-slug }}.png" alt="{{ work.client-name }}" />
+					<img class="thumb" src="{{ site.baseurl }}/img/clientthumb-2-{{ work.client-slug }}.jpg" alt="{{ work.client-name }}" />
+					<span class="copy">{{ work.client-tag }}</span>
+				</a>
+			</div>
+		{% endfor %}
 	</div>
-{% endfor %}
 </div>
 {% elsif include.layout == "page" %}
 <div class="client-page client-{{ page.client-slug }}">
 	<div class="head cf">
-	  <div class="logo">
-	  	<a href="/">
-        {% include svg/alt-house-interactive.svg %}
-        <span>Alt House Interactive</span>
-	    </a>
-      </div>
-	  <em>&amp;</em>
 	  <img src="{{ site.baseurl }}/img/client-logo-{{ page.client-slug }}.png" alt="{{ page.client-name }}" />
 	</div>
 	<div class="page-title cf">
 		<h2 class="tag">{{ page.client-tag }}</h2>
-		<h1>Client: {{ page.client-name }}</h1>
+		<h1 style="line-height: normal">Client: {{ page.client-name }}</h1>
 	</div>
 	<div class="slide">
 	  <div class="inner">
@@ -58,7 +69,7 @@
 	    {% endif %}
 		{{ content }}
 		{% if page.project-url %}
-		<p><a class="cta-button" href="{{page.project-url}}" target="_blank">Visit Site</a></p>
+		<p><a class="button" href="{{page.project-url}}" target="_blank">Visit Site</a></p>
 	    {% endif %}
 		</div><!-- .content -->
 	  </div>

@@ -8,7 +8,7 @@ meta-description: 'Email campaigns by Alt House drive sales.'
 item-order: 1
 ---
 
-{% include slides/hero.html headline="Convert More of Your Leads Into Customers" subhead="(without any extra work)" cta-button="Learn More" cta-link="#leadform" image="drip-hero-bg.png" %}
+{% include slides/hero.html headline="Convert More of Your Leads Into Customers" subhead="(without any extra work)" button="Learn More" cta-link="#leadform" image="drip-hero-bg.png" %}
 
 {% include slides/divider.html headline="An email drip campaign (or autoresponder series) may be the single most effective way to nurture leads from your website and close more sales." text="The great part is, once you’ve created the series, your work is done. And since creating successful emails is our job, you really just have to cash the checks." %}
 

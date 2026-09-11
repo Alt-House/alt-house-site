@@ -2,13 +2,10 @@
 {% include header.html %}
 
 {% if page.slug == "home" %}
-  {% include video-header.html layout="home" %}
+
 {% elsif page.slug == "work" %}
 
 {% else %}
-<div class="page-head">
-  <img alt="Alt House" src="{{ site.baseurl }}/img/alt-house-white.png" />
-</div>
 {% endif %}
 
 <div class="content">

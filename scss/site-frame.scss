@@ -3,42 +3,145 @@
 $nav-height: 60px;
 $footer-height: 40px;
 
+* {
+	--page-width: 1400px;
+	--slide-padding: 80px;
+	--slide-padding-sm: 56px;
+	--color-accent: #CF4C2D;
+	--color-border-light: #DFDCD8;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body {
+	overscroll-behavior-y: none;
+}
 body {
-	padding: $site-border-width;
-	font-weight: 300
+	background: $body-background;
+	color: $font-color;
+	font-size: $base-font-size;
+	font-weight: 300;
 }
+body, button, label {
+	font-family: $font-family;
+	font-weight: 300;
+}
+a {
+	color: $link;
+	text-decoration: none;
+	outline: none;
+	&:hover {
+		color: color-mix(in oklab, $link, white 8%);
+	}
+}
+p {
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+/* Headers -------------------------------------------------- */
 h1, h2, h3, h4, h5 {
+	font-family: $accent-font;
 	font-weight: 700;
-	letter-spacing: -1px;
 }
-.border {
-	&:before, &:after, span {
-		position: fixed;
-		z-index: 100;
-		content: '';
-		background-color: $black;
+h1 {
+	font-size: 2.2rem;
+	line-height: 2.8rem;
+}
+h2 {
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+}
+h3 {
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+}
+h4 {
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+h5 {
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+@media all and (min-width: 420px) {
+	h1 {
+		font-size: 3.5rem;
+		line-height: 4.1rem;
 	}
-	&:before, &:after {
-		height: $site-border-width;
-		left: 0; right: 0;
+	h2 {
+		font-size: 2.4rem;
+		line-height: 2.8rem;
 	}
-	span {
-		width: $site-border-width;
-		top: 0; bottom: 0;
+	h3 {
+		font-size: 1.8rem;
+		line-height: 2.2rem;
 	}
-	&:before {
-		top: 0;
+	h4 {
+		font-size: 1.4rem;
+		line-height: 1.8rem;
 	}
-	&:after {
-		bottom: 0;
-	}
-	.right {
-		right: 0;
-	}
-	.left {
-		left: 0;
+	h5 {
+		font-size: 1rem;
+		line-height: 1.4rem;
 	}
 }
+/* Helpers -------------------------------------------------- */
+
+.muted {
+	opacity: .6;
+}
+
+.caption {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 5px;
+	font-size: .8rem;
+}
+
+.large-text {
+	font-size: 1.3rem;
+	line-height: 1.6rem;
+	opacity: .6;
+}
+
+.mb {
+	margin-bottom: 1rem;
+}
+
+.mb-sm {
+	margin-bottom: .8rem;
+}
+
+.mb-lg {
+	margin-bottom: 3rem;
+}
+
+/* Header / Footer ------------------------------------------ */
+.page-head-text {
+	margin-top: -46px;
+	overflow: hidden;
+	height: 180px;
+	border-bottom: 14px solid;
+	z-index: 10;
+	position: relative;
+}
+
+.page-head-text .inner {
+	text-transform: uppercase;
+	font-size: 200px;
+	font-weight: 700;
+	width: 100vw;
+}
+
+.page-head-text .inner a {
+	color: #000;
+	display: block;
+	text-align: center;
+}
+
 .copyright {
 	text-transform: uppercase;
 	display: block;

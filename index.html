@@ -6,7 +6,16 @@ meta-title: Home
 meta-description: Home page.
 ---
 
-<div class="services-list">
+{% include slides/hero.html layout="home" headline="High Level Strategy, Hands on Execution" subhead="Solve technology, process or marketing problems with a partner that can help define the problem, find creative solutions and get projects completed." button="Let's Chat" cta-link="#contact"  %}
+
+<div class="scrolling-text fade-edges mb-lg">
+  <div class="items">
+    <div class="text">Complex Ecommerce - UX Research - Interface Design - Conversion Optimization - Digital Strategy - Visual Design - Development - Systems Architecture -&nbsp;</div>
+    <div class="text">Complex Ecommerce - UX Research - Interface Design - Conversion Optimization - Digital Strategy - Visual Design - Development - Systems Architecture -&nbsp;</div>
+  </div>
+</div>
+
+<div class="services-list hidden">
   <ul>
     <li><span><i class="fad fa-object-group"></i>User Experience (UX) Strategy & Design</span></li>
     <li><span><i class="fad fa-swatchbook"></i>Visual Interface & Web Design</span></li>
@@ -20,15 +29,14 @@ meta-description: Home page.
 {% include team-bios.html %}
 
 <div class="contact" id="contact">
-<div class="copy">
-  <h2>We'd love to <span>hear from you!</span></h2>
-  <p>Don't be shy, we're all friends at Alt House.</p>
-  <br><br>
-  <p>
-    Located in Sunny Phoenix, Arizona.
-    <i class="fad fa-sunglasses" style="--fa-primary-opacity: 1;--fa-secondary-opacity: 1;--fa-primary-color: #fece2e;--fa-secondary-color: #4b4542;font-size: 30px;display: block;"></i>
-  </p>
-</div>
-{% include contact-form.html %}
+  <div class="copy">
+    <h2 class="mb">We'd love to <span>hear from you!</span></h2>
+    <div class="large-text muted mb-lg">Don't be shy, we're all friends at Alt House.</div>
 
+    <div>
+      <div class="caption muted mb-sm">Located in Sunny Phoenix, AZ</div>
+      <i class="fad fa-sunglasses" style="--fa-primary-opacity: 1;--fa-secondary-opacity: 1;--fa-primary-color: #fece2e;--fa-secondary-color: #4b4542;font-size: 24px;display: block;"></i>
+    </div>
+  </div>
+  {% include contact-form.html %}
 </div><!-- /.contact -->

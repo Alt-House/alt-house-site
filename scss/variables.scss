@@ -1,4 +1,4 @@
-$body-background: #fff;
+$body-background: #EBE8E3;
 $base-font-size: 16px;
 
 $page-background: $body-background;
@@ -6,7 +6,7 @@ $page-background: $body-background;
 $main-color: #666666;
 $main-color-highlight: #333333; //darker
 $accent-color: #000000;
-$highlight-color: #fece2e; //#669D31;
+$highlight-color: var(--color-accent);// #fece2e; //#669D31;
 
 $black: #2E2E2E; //#000000;
 $gray-lightest: #f5f4f2; //#f6e8e1; //#f1ece9; //#f5f4f2;
@@ -27,7 +27,7 @@ $field-height: 50px;
 
 $error: #d92424;
 
-$page-size: 1000px;
+$page-size: 1400px;
 
 $desktop-side-space: 50px;
 $mobile-side-space: 30px;

@@ -9,6 +9,17 @@
         z-index: 2;
         padding: 50px 20px;
     }
+    .head {
+        max-width: 560px;
+    }
+    .subhead {
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        max-width: 650px;
+    }
+}
+.hero.hero--has-image {
     .bg {
         position: absolute;
         top: 0; bottom: 0;
@@ -18,30 +29,18 @@
         background-position: center center;
         background-repeat: no-repeat;
     }
-    .cta-button {
-        margin-top: 30px;
-    }
 }
 
 // Responsive ------------------------------------------------------------------
 @media all and (min-width: 420px) {
-// Tablet & Up
-.hero {
-    .inner {
-        padding: 100px 20px;
+    .hero {
+        .inner {
+            padding: 100px 20px;
+        }
     }
-    h1, h2 {
-        max-width: 40%;
+    .hero.hero--has-image {
+        h1, h2 {
+            max-width: 40%;
+        }
     }
-
 }
-// End Tablet & Up
-}
-
-@media all and (min-width: 800px) {
-// Desktop & Up
-
-}
-
-
-

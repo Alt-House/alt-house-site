@@ -8,78 +8,14 @@ meta-description: 'CRO by Alt House'
 item-order: 2
 ---
 <style>
-    body {
-        padding: 0;
-        background-color: #EBE8E3;
-    }
-    * {
-        --slide-padding: 80px;
-        --slide-padding-sm: 56px;
-        --color-accent: #CF4C2D;
-    }
-
-    h2 {
-        font-size: 2.4rem;
-        line-height: 2.6rem;
-    }
-
     .cro-white-tile {
+        max-width: var(--page-width);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
         background: #fff;
         border-radius: 30px;
-        margin: 40px;
     }
-
-    .cro-cta-button {
-        padding: 0 1.5em;
-
-        color: #fff;
-        background: var(--color-accent);
-        display: inline-block;
-        font-size: 1.4rem;
-        font-weight: bold;
-        line-height: 50px;
-        border-radius: 25px;
-
-        transition: all .3s;
-        &:hover {
-            color: #fff;
-            background: color-mix(in oklab, var(--color-accent), white 8%);
-            cursor: pointer;
-        }
-        &.block {
-            display: block;
-            text-align: center;
-            width: 100%;
-        }
-    }
-
-    .caption {
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 5px;
-        font-size: .8rem;
-    }
-
-    .large-text {
-        font-size: 1.3rem;
-        line-height: 1.6rem;
-        opacity: .6;
-    }
-
-    .mb {
-        margin-bottom: 1rem;
-    }
-
-    .mb-sml {
-        margin-bottom: 1rem;
-    }
-
-    .mb-lg {
-        margin-bottom: 3rem;
-    }
-
-    /* Generic Slides */
-
     /* Generic Slide - header right text left */
     .cro-section-style-1 {
         display: flex;
@@ -91,63 +27,6 @@ item-order: 2
     }
     .cro-section-style-1 h2 {
         min-width: 400px;
-    }
-
-    /* Specific Slides */
-
-    .cro-header {
-        text-transform: uppercase;
-        font-size: 200px;
-        font-weight: 700;
-        height: 180px;
-        width: 100vw;
-        overflow: hidden;
-        margin-top: -46px;
-        border-bottom: 14px solid;
-    }
-
-    .cro-hero {
-    }
-    .cro-hero .inner {
-        padding: 100px;
-    }
-    .cro-hero h1 {
-        font-size: 3.5rem;
-        max-width: 600px;
-    }
-    .cro-hero .subtext {
-        max-width: 700px;
-        font-size: 1.6rem;
-        line-height: 1.8rem;
-        opacity: .5;
-    }
-    @keyframes infiniteScroll {
-        from {transform: translateX(0)}
-        to {transform: translateX(-50%)}
-    }
-    .cro-scrolling-text {
-        width: 100%;
-        overflow-x: hidden;
-    }
-    .cro-scrolling-text .items {
-        display: flex;
-        font-size: 30px;
-        line-height: 40px;
-        width: 2600px;
-        animation-name: infiniteScroll;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-    .cro-scrolling-text .text {
-        white-space: nowrap;
-    }
-    .fade-edges {
-        /* The core mask gradient */
-        mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-
-        /* Required prefix for older WebKit browsers (Safari, older Chrome) */
-        -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
     }
 
     .cro-who {
@@ -165,8 +44,8 @@ item-order: 2
     }
     .cro-who .list div {
         padding: 1.2rem;
-        border-bottom: 1px solid #000000;     /* Add bottom border to all items */
-        border-right: 1px solid #000000;      /* Add right border to all items */
+        border-bottom: 1px solid var(--color-border-light);     /* Add bottom border to all items */
+        border-right: 1px solid var(--color-border-light);      /* Add right border to all items */
     }
     .cro-who .list div:nth-child(2n) {
         border-right: none;
@@ -190,8 +69,8 @@ item-order: 2
     }
     .cro-approach .list div {
         padding: 1.2rem;
-        border-bottom: 1px solid #000000;     /* Add bottom border to all items */
-        border-right: 1px solid #000000;      /* Add right border to all items */
+        border-bottom: 1px solid var(--color-border-light);     /* Add bottom border to all items */
+        border-right: 1px solid var(--color-border-light);      /* Add right border to all items */
     }
     .cro-approach .list div:nth-child(4n) {
         border-right: none;
@@ -223,7 +102,7 @@ item-order: 2
         width: 40px;
         height: 40px;
         line-height: 40px;
-        border: 1px solid;
+        border: 1px solid var(--color-border-light);
         border-radius: 100%;
     }
 
@@ -241,22 +120,14 @@ item-order: 2
 
 </style>
 
-<div class="cro-header">AltHouse</div>
+    {% include slides/hero.html layout="home" headline="Turn Interest, Intent, and Effort Into Action" subhead="Strengthen the paths that matter most — from purchasing and quote requests to onboarding and configuration — so more customers complete, convert, and move forward with confidence." button="Schedule a Discovery Call" cta-link="/#contact"  %}
 
-<div class="cro-hero">
-    <div class="inner">
-        <h1 class="mb">Turn Interest, Intent, and Effort Into Action</h1>
-        <div class="subtext mb-lg">Strengthen the paths that matter most — from purchasing and quote requests to onboarding and configuration — so more customers complete, convert, and move forward with confidence.</div>
-
-        <a href="{{ include.cta-link }}" class="cro-cta-button">Schedule a Discovery Call</a>
-    </div>
-    <div class="cro-scrolling-text fade-edges">
+    <div class="scrolling-text fade-edges mb-lg">
         <div class="items">
             <div class="text">Ecommerce - Custom Product Configurator - Onboarding & Intake - eLearning - Portal - B2B - Wholesale - B2B2C -&nbsp;</div>
             <div class="text">Ecommerce - Custom Product Configurator - Onboarding & Intake - eLearning - Portal - B2B - Wholesale - B2B2C -&nbsp;</div>
         </div>
     </div>
-</div>
 
 <div class="cro-problem cro-section-style-1 cro-white-tile">
     <h2>Friction Often Hides in the Details</h2>
@@ -332,7 +203,7 @@ item-order: 2
         <div class="caption mb">Take the Next Step</div>
         <h2 class="mb">Let's Find the Friction</h2>
         <div class="large-text mb-lg">If people are pausing, dropping off, or struggling to move forward, the next step isn’t always obvious. We’ll talk through what may be creating friction and how Alt House Interactive can help bring the path forward into focus.</div>
-        <a href="{{ include.cta-link }}" class="cro-cta-button">Schedule a Discovery Call</a>
+        <a href="{{ include.cta-link }}" class="button">Schedule a Discovery Call</a>
     </div>
 </div>
 
