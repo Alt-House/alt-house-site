@@ -22,7 +22,7 @@
 		background: $black;
 		display: block;
 		overflow: hidden;
-		aspect-ratio: 16 / 9;
+		aspect-ratio: 1 / 1;
 		position: relative;
 		border-radius: 30px;
 		&:after {
@@ -31,11 +31,8 @@
 			z-index: 2;
 			display: block;
 			opacity: .8;
-			background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-
 			top: 0; bottom: 0;
-			left: 0;
-			right: 60%;
+			left: 0; right: 0;
 		}
 		&:hover {
 			&:after {
@@ -62,8 +59,8 @@
 	.content {
 		display: block;
 		position: absolute;
-		bottom: 40px;
-		left: 40px;
+		bottom: 20px;
+		left: 20px;
 		z-index: 3;
 	}
 	.logo {
@@ -73,13 +70,36 @@
 		display: block;
 	}
 	.headline {
+		opacity: .9;
 		@include transition(all .5s ease-out);
 		color: #fff;
-		opacity: .7;
-		font-size: 24px;
-		line-height: 30px;
+		font-size: 20px;
+		line-height: 26px;
 		display: block;
 		max-width: 450px;
+	}
+}
+@media all and (min-width: 550px) {
+	.client-work {
+		a {
+			aspect-ratio: 16 / 9;
+			&:after {
+				background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+
+				left: 0;
+				right: 60%;
+			}
+
+		}
+		.content {
+			bottom: 40px;
+			left: 40px;
+		}
+		.headline {
+			opacity: .7;
+			font-size: 24px;
+			line-height: 30px;
+		}
 	}
 }
 .client-work-list {

@@ -164,14 +164,12 @@
     border-bottom: $site-border-width solid $black;
     .inner {
         overflow: hidden;
-        padding: 8em 0 5em;
+        padding: 8em 1rem 5em;
         max-width: var(--page-width);
         margin-left: auto;
         margin-right: auto;
         position: relative;
         z-index: 2;
-        display: flex;
-        align-items: stretch;
     }
     .bg-image {
         position: absolute;
@@ -183,6 +181,19 @@
         opacity: .2;
     }
 }
+@media all and (min-width: 780px) {
+    .team-bios {
+        .inner {
+            padding: 10em 1rem 8em;
+            display: flex;
+            align-items: stretch;
+        }
+    }
+
+}
+
+
+
 .home-clients {
     overflow: hidden;
     padding: 30px 10px;
@@ -283,11 +294,6 @@
         width: 33.33%;
     }
 
-}
-.team-bios {
-    .inner {
-        padding: 10em 0 8em;
-    }
 }
 .home-clients {
     padding: 30px 50px;
